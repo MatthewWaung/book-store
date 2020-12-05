@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>商品管理</title>
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css" />
+    <script src="/static/script/jquery-1.7.2.js"></script>
+
+    <script>
+      $(function () {
+        $(".deleteBook").click(function () {
+          var title = $(this).attr("id");
+          return confirm("确定要删除【" + title + "】这本商品吗？");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <img class="logo_img" alt="" src="/static/img/logo.gif" />
+      <span class="wel_word">商品管理系统</span>
+      <div>
+        <a href="/getPageBooks">商品管理</a>
+        <a href="/getOrders">订单管理</a>
+        <a href="/">返回商城</a>
+      </div>
+    </div>
+
+    <div id="main">
+      <table>
+        <tr>
+          <td>名称</td>
+          <td>作者</td>
+          <td>价格</td>
+          <td>销量</td>
+          <td>库存</td>
+          <td colspan="2">操作</td>
+        </tr>
+
+        {{range .Books}}
+        <tr>
+          <td>{{.Title}}</td>
+          <td>{{.Author}}</td>
+          <td>{{.Price}}</td>
+          <td>{{.Sales}}</td>
+          <td>{{.Stock}}</td>
+          <td><a href="/toUpdateBookPage?bookId={{.ID}}">修改</a></td>
+          <td>
+            <a
+              id="{{.Title}}"
+              class="deleteBook"
+              href="/deleteBook?bookId={{.ID}}"
+              >删除</a
+            >
+          </td>
+        </tr>
+        {{end}}
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a href="/toUpdateBookPage">添加商品</a></td>
+        </tr>
+      </table>
+      <div id="page_nav">
+        {{if .IsHasPrev}}
+        <a href="/getPageBooks">首页</a>
+        <a href="/getPageBooks?pageNo={{.GetPrevPageNo}}">上一页</a>
+        {{end}}
+        当前是第{{.PageNo}}页，共{{.TotalPageNo}}页，共{{.TotalRecord}}条记录
+        {{if .IsHasNext}}
+        <a href="/getPageBooks?pageNo={{.GetNextPageNo}}">下一页</a>
+        <a href="/getPageBooks?pageNo={{.TotalPageNo}}">末页</a>
+        {{end}} 到第<input value="{{.PageNo}}" name="pn" id="pn_input" />页
+        <input type="button" value="确定" id="sub" />
+        <script>
+          $("#sub").click(function () {
+            // 给确定按钮绑定单击事件
+            var pageNo = $("#pn_input").val(); // 获取输入的页码
+            location = "/getPageBooks?pageNo=" + pageNo;
+          });
+        </script>
+      </div>
+    </div>
+
+    <div id="bottom">
+      <span> Copyright © 2007-2020 书文 版权所有 </span>
+      <span> 京ICP备15025412号-2 京ICP备15025412-4号 </span>
+      <span> 24小时客服电话微信15010729356 </span>
+    </div>
+  </body>
+</html>

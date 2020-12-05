@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cart</title>
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css" />
+    <script src="static/script/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+      //实现微信支付JS脚本
+      function pay() {
+        WeixinJSBridge.invoke(
+          "getBrandWCPayRequest",
+          {
+            appId: "{{.AppId}}", //公众号名称，由商户传入
+            timeStamp: "{{.TimeStamp}}", //时间戳，自1970年以来的秒数
+            nonceStr: "{{.NonceStr}}", //随机串
+            package: "{{.Package}}",
+            signType: "{{.SignType}}", //微信签名方式:
+            paySign: "{{.PaySign}}", //微信签名
+          },
+          function (res) {
+            if (res.err_msg == "get_brand_wcpay_request:ok") {
+              alert("支付成功");
+            } else if (res.err_msg == "get_brand_wcpay_request:cancel") {
+              alert("支付过程中用户取消");
+            } else {
+              //支付失败
+              alert(res.err_msg);
+            }
+          }
+        );
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--打印出参数-->
+    <h1>微信jsapi支付 1分钱</h1>
+    <a>Appid: {{.AppId}}</a><br />
+    <a>TimeStamp: {{.TimeStamp}}</a><br />
+    <a>Nonce_str: {{.NonceStr}}</a><br />
+    <a>Package: {{.Package}}</a><br />
+    <a>SignType: {{.SignType}}</a><br />
+    <a>PaySign: {{.PaySign}}</a><br />
+
+    <button type="button" onclick="pay()">点击微信支付</button>
+  </body>
+</html>

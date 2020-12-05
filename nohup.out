@@ -1,0 +1,2081 @@
+2020/11/25 15:43:41 http: panic serving 101.89.19.140:36291: runtime error: invalid memory address or nil pointer dereference
+goroutine 120 [running]:
+net/http.(*conn).serve.func1(0xc00018fa40)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc000262c40, 0xc0002c9400)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc000262c40, 0xc0002c9400)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc000262c40, 0xc0002c9400)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000262c40, 0xc0002c9400)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000262c40, 0xc0002c9400)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00018fa40, 0xaa1f80, 0xc0002e8100)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/25 23:15:13 http: panic serving 203.208.60.31:52310: runtime error: invalid memory address or nil pointer dereference
+goroutine 2422 [running]:
+net/http.(*conn).serve.func1(0xc00008e320)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c81c0, 0xc00015a100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c81c0, 0xc00015a100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c81c0, 0xc00015a100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c81c0, 0xc00015a100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c81c0, 0xc00015a100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00008e320, 0xaa1f80, 0xc0001c6040)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/26 02:28:27 http: panic serving 106.11.159.46:41053: runtime error: invalid memory address or nil pointer dereference
+goroutine 3360 [running]:
+net/http.(*conn).serve.func1(0xc00018e820)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0003b0540, 0xc0003da600)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0003b0540, 0xc0003da600)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0003b0540, 0xc0003da600)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0003b0540, 0xc0003da600)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00018e820, 0xaa1f80, 0xc0003e4180)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/26 05:37:46 http: panic serving 203.208.60.15:39466: runtime error: invalid memory address or nil pointer dereference
+goroutine 5883 [running]:
+net/http.(*conn).serve.func1(0xc00008f680)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8460, 0xc000091200)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c8460, 0xc000091200)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c8460, 0xc000091200)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8460, 0xc000091200)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8460, 0xc000091200)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00008f680, 0xaa1f80, 0xc000060e00)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/26 06:38:42 http: panic serving 116.179.32.89:44466: runtime error: invalid memory address or nil pointer dereference
+goroutine 6113 [running]:
+net/http.(*conn).serve.func1(0xc00008f400)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c8380, 0xc000091200)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c8380, 0xc000091200)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8380, 0xc000091200)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8380, 0xc000091200)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00008f400, 0xaa1f80, 0xc000060cc0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/26 15:47:51 http: panic serving 203.208.60.57:39114: runtime error: invalid memory address or nil pointer dereference
+goroutine 8090 [running]:
+net/http.(*conn).serve.func1(0xc00018f900)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c81c0, 0xc00015a100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c81c0, 0xc00015a100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c81c0, 0xc00015a100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c81c0, 0xc00015a100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c81c0, 0xc00015a100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00018f900, 0xaa1f80, 0xc000296000)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/26 18:44:27 http: panic serving 203.208.60.72:56022: runtime error: invalid memory address or nil pointer dereference
+goroutine 8611 [running]:
+net/http.(*conn).serve.func1(0xc00008f180)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8540, 0xc00015b100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c8540, 0xc00015b100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c8540, 0xc00015b100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8540, 0xc00015b100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8540, 0xc00015b100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00008f180, 0xaa1f80, 0xc0002970c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:10:44 http: panic serving 111.162.143.161:62336: runtime error: invalid memory address or nil pointer dereference
+goroutine 10989 [running]:
+net/http.(*conn).serve.func1(0xc000146000)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8a80, 0xc00015a800)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c8a80, 0xc00015a800)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c8a80, 0xc00015a800)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8a80, 0xc00015a800)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8a80, 0xc00015a800)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146000, 0xaa1f80, 0xc0001c79c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:10:45 http: panic serving 220.250.62.206:57463: runtime error: invalid memory address or nil pointer dereference
+goroutine 10993 [running]:
+net/http.(*conn).serve.func1(0xc000146280)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c8e00, 0xc00015ac00)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c8e00, 0xc00015ac00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8e00, 0xc00015ac00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8e00, 0xc00015ac00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146280, 0xaa1f80, 0xc0001c7e00)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:10:45 http: panic serving 119.39.46.208:31143: runtime error: invalid memory address or nil pointer dereference
+goroutine 10978 [running]:
+net/http.(*conn).serve.func1(0xc00018ff40)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8ee0, 0xc00015b800)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0000c8ee0, 0xc00015b800)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8ee0, 0xc00015b800)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8ee0, 0xc00015b800)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00018ff40, 0xaa1f80, 0xc0001c6a80)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:10:45 http: panic serving 1.28.132.102:50433: runtime error: invalid memory address or nil pointer dereference
+goroutine 11006 [running]:
+net/http.(*conn).serve.func1(0xc000146460)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8fc0, 0xc00015bf00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c8fc0, 0xc00015bf00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c8fc0, 0xc00015bf00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8fc0, 0xc00015bf00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8fc0, 0xc00015bf00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146460, 0xaa1f80, 0xc000061900)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:10:45 http: panic serving 125.36.253.166:11135: runtime error: invalid memory address or nil pointer dereference
+goroutine 11014 [running]:
+net/http.(*conn).serve.func1(0xc000146640)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c9260, 0xc00017ae00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0000c9260, 0xc00017ae00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c9260, 0xc00017ae00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c9260, 0xc00017ae00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146640, 0xaa1f80, 0xc00016e3c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:10:46 http: panic serving 106.45.1.215:31867: runtime error: invalid memory address or nil pointer dereference
+goroutine 11018 [running]:
+net/http.(*conn).serve.func1(0xc0001466e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc000252000, 0xc0001b5f00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc000252000, 0xc0001b5f00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000252000, 0xc0001b5f00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000252000, 0xc0001b5f00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001466e0, 0xaa1f80, 0xc00016e880)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:10:46 http: panic serving 112.66.96.99:59830: runtime error: invalid memory address or nil pointer dereference
+goroutine 11046 [running]:
+net/http.(*conn).serve.func1(0xc000146820)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0002520e0, 0xc00022aa00)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0002520e0, 0xc00022aa00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0002520e0, 0xc00022aa00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0002520e0, 0xc00022aa00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146820, 0xaa1f80, 0xc000256e80)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:10:47 http: panic serving 171.34.176.87:44248: runtime error: invalid memory address or nil pointer dereference
+goroutine 10995 [running]:
+net/http.(*conn).serve.func1(0xc000146320)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0002521c0, 0xc00015b200)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0002521c0, 0xc00015b200)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0002521c0, 0xc00015b200)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0002521c0, 0xc00015b200)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0002521c0, 0xc00015b200)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146320, 0xaa1f80, 0xc0001c7f00)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:10:48 http: panic serving 171.34.177.65:18080: runtime error: invalid memory address or nil pointer dereference
+goroutine 11053 [running]:
+net/http.(*conn).serve.func1(0xc000146960)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc000252460, 0xc00022b100)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc000252460, 0xc00022b100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000252460, 0xc00022b100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000252460, 0xc00022b100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146960, 0xaa1f80, 0xc000257600)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:10:48 http: panic serving 49.118.194.242:36440: runtime error: invalid memory address or nil pointer dereference
+goroutine 11054 [running]:
+net/http.(*conn).serve.func1(0xc000146a00)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc000252540, 0xc00022b200)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc000252540, 0xc00022b200)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000252540, 0xc00022b200)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000252540, 0xc00022b200)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146a00, 0xaa1f80, 0xc000257680)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:10:50 http: panic serving 117.14.152.34:53951: runtime error: invalid memory address or nil pointer dereference
+goroutine 11061 [running]:
+net/http.(*conn).serve.func1(0xc000146aa0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc000252700, 0xc00022b900)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc000252700, 0xc00022b900)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc000252700, 0xc00022b900)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000252700, 0xc00022b900)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000252700, 0xc00022b900)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146aa0, 0xaa1f80, 0xc000257c00)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:13:30 http: panic serving 124.235.138.172:42958: runtime error: invalid memory address or nil pointer dereference
+goroutine 11102 [running]:
+net/http.(*conn).serve.func1(0xc00018f900)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8460, 0xc000091300)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0000c8460, 0xc000091300)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8460, 0xc000091300)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8460, 0xc000091300)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00018f900, 0xaa1f80, 0xc0001c6fc0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:13:30 http: panic serving 111.224.234.214:33183: runtime error: invalid memory address or nil pointer dereference
+goroutine 11110 [running]:
+net/http.(*conn).serve.func1(0xc00018ff40)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c8700, 0xc00015a300)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c8700, 0xc00015a300)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8700, 0xc00015a300)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8700, 0xc00015a300)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00018ff40, 0xaa1f80, 0xc0001c7c00)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:13:30 http: panic serving 110.177.182.182:40531: runtime error: invalid memory address or nil pointer dereference
+goroutine 11112 [running]:
+net/http.(*conn).serve.func1(0xc000146000)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c87e0, 0xc00015a400)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c87e0, 0xc00015a400)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c87e0, 0xc00015a400)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c87e0, 0xc00015a400)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146000, 0xaa1f80, 0xc0001c7d40)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:13:30 http: panic serving 110.177.182.86:33903: runtime error: invalid memory address or nil pointer dereference
+goroutine 11114 [running]:
+net/http.(*conn).serve.func1(0xc0001461e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c88c0, 0xc00015a500)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c88c0, 0xc00015a500)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c88c0, 0xc00015a500)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c88c0, 0xc00015a500)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c88c0, 0xc00015a500)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001461e0, 0xaa1f80, 0xc0001c7f00)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:15:17 http: panic serving 124.225.45.250:34638: runtime error: invalid memory address or nil pointer dereference
+goroutine 10996 [running]:
+net/http.(*conn).serve.func1(0xc0001463c0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c9dc0, 0xc00022ae00)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c9dc0, 0xc00022ae00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c9dc0, 0xc00022ae00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c9dc0, 0xc00022ae00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001463c0, 0xaa1f80, 0xc0001c7fc0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:15:18 http: panic serving 124.88.55.62:42589: runtime error: invalid memory address or nil pointer dereference
+goroutine 11175 [running]:
+net/http.(*conn).serve.func1(0xc00008f180)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c9ea0, 0xc00022b900)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c9ea0, 0xc00022b900)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c9ea0, 0xc00022b900)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c9ea0, 0xc00022b900)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00008f180, 0xaa1f80, 0xc0001c7040)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:15:18 http: panic serving 182.245.138.140:51448: runtime error: invalid memory address or nil pointer dereference
+goroutine 11191 [running]:
+net/http.(*conn).serve.func1(0xc000146000)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0001ac000, 0xc00022bc00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0001ac000, 0xc00022bc00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0001ac000, 0xc00022bc00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0001ac000, 0xc00022bc00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0001ac000, 0xc00022bc00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146000, 0xaa1f80, 0xc0002961c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:15:18 http: panic serving 60.13.6.241:58391: runtime error: invalid memory address or nil pointer dereference
+goroutine 11176 [running]:
+net/http.(*conn).serve.func1(0xc00008f400)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0001ac0e0, 0xc000290000)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0001ac0e0, 0xc000290000)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0001ac0e0, 0xc000290000)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0001ac0e0, 0xc000290000)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00008f400, 0xaa1f80, 0xc0001c70c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:15:18 http: panic serving 171.34.176.68:17763: runtime error: invalid memory address or nil pointer dereference
+goroutine 11209 [running]:
+net/http.(*conn).serve.func1(0xc0001461e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0001ac1c0, 0xc000290f00)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0001ac1c0, 0xc000290f00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0001ac1c0, 0xc000290f00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0001ac1c0, 0xc000290f00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001461e0, 0xaa1f80, 0xc000297640)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:15:21 http: panic serving 27.224.136.221:28322: runtime error: invalid memory address or nil pointer dereference
+goroutine 11212 [running]:
+net/http.(*conn).serve.func1(0xc000146280)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0001ac2a0, 0xc000291000)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0001ac2a0, 0xc000291000)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0001ac2a0, 0xc000291000)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0001ac2a0, 0xc000291000)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146280, 0xaa1f80, 0xc000297840)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:15:21 http: panic serving 175.152.109.64:30622: runtime error: invalid memory address or nil pointer dereference
+goroutine 11031 [running]:
+net/http.(*conn).serve.func1(0xc000146780)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0001ac380, 0xc000290700)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0001ac380, 0xc000290700)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0001ac380, 0xc000290700)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0001ac380, 0xc000290700)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146780, 0xaa1f80, 0xc00016fa40)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:15:21 http: panic serving 171.36.128.16:30960: runtime error: invalid memory address or nil pointer dereference
+goroutine 11213 [running]:
+net/http.(*conn).serve.func1(0xc000146320)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0001ac460, 0xc000291100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0001ac460, 0xc000291100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0001ac460, 0xc000291100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0001ac460, 0xc000291100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0001ac460, 0xc000291100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146320, 0xaa1f80, 0xc0002978c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:15:23 http: panic serving 120.85.110.223:62742: runtime error: invalid memory address or nil pointer dereference
+goroutine 11217 [running]:
+net/http.(*conn).serve.func1(0xc000146460)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0001ac540, 0xc000291200)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0001ac540, 0xc000291200)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0001ac540, 0xc000291200)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0001ac540, 0xc000291200)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146460, 0xaa1f80, 0xc000297b40)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:15:24 http: panic serving 221.213.75.188:58355: runtime error: invalid memory address or nil pointer dereference
+goroutine 11219 [running]:
+net/http.(*conn).serve.func1(0xc000146640)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0001ac620, 0xc000291300)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0001ac620, 0xc000291300)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0001ac620, 0xc000291300)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0001ac620, 0xc000291300)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146640, 0xaa1f80, 0xc000256000)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:15:25 http: panic serving 221.213.75.236:16029: runtime error: invalid memory address or nil pointer dereference
+goroutine 11011 [running]:
+net/http.(*conn).serve.func1(0xc0001465a0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0001ac700, 0xc000290e00)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0001ac700, 0xc000290e00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0001ac700, 0xc000290e00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0001ac700, 0xc000290e00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001465a0, 0xaa1f80, 0xc000061f40)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:15:30 http: panic serving 112.66.106.185:16443: runtime error: invalid memory address or nil pointer dereference
+goroutine 11222 [running]:
+net/http.(*conn).serve.func1(0xc0001466e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0001ac7e0, 0xc000291400)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0001ac7e0, 0xc000291400)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0001ac7e0, 0xc000291400)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0001ac7e0, 0xc000291400)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001466e0, 0xaa1f80, 0xc000256180)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:32:35 http: panic serving 106.11.159.102:36781: runtime error: invalid memory address or nil pointer dereference
+goroutine 11318 [running]:
+net/http.(*conn).serve.func1(0xc00018ff40)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c8540, 0xc000090c00)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c8540, 0xc000090c00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8540, 0xc000090c00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8540, 0xc000090c00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00018ff40, 0xaa1f80, 0xc000296740)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/27 03:32:43 http: panic serving 42.120.160.95:10153: runtime error: invalid memory address or nil pointer dereference
+goroutine 11320 [running]:
+net/http.(*conn).serve.func1(0xc00008f180)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8620, 0xc000090d00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c8620, 0xc000090d00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c8620, 0xc000090d00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8620, 0xc000090d00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8620, 0xc000090d00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00008f180, 0xaa1f80, 0xc000296800)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+[mysql] 2020/11/27 06:10:32 packets.go:36: unexpected EOF
+2020/11/27 21:59:40 http: panic serving 220.194.106.61:55944: runtime error: invalid memory address or nil pointer dereference
+goroutine 20333 [running]:
+net/http.(*conn).serve.func1(0xc0001461e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetOrderByUserID(0xaa0840, 0xc0000c82a0, 0xc000090a00)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:69 +0x39
+net/http.HandlerFunc.ServeHTTP(0x9fd0f0, 0xaa0840, 0xc0000c82a0, 0xc000090a00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c82a0, 0xc000090a00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c82a0, 0xc000090a00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001461e0, 0xaa1f80, 0xc000060940)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/28 01:36:47 http: panic serving 183.192.179.16:61782: runtime error: invalid memory address or nil pointer dereference
+goroutine 21188 [running]:
+net/http.(*conn).serve.func1(0xc000146000)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146000, 0xaa1f80, 0xc0001c6040)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/28 14:02:00 http: panic serving 203.208.60.15:48832: runtime error: invalid memory address or nil pointer dereference
+goroutine 24205 [running]:
+net/http.(*conn).serve.func1(0xc000146000)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.UpdateCartItem(0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:40 +0xf9
+net/http.HandlerFunc.ServeHTTP(0x9fd148, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146000, 0xaa1f80, 0xc0001c6040)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/28 18:26:00 http: panic serving 203.208.60.99:34412: runtime error: invalid memory address or nil pointer dereference
+goroutine 26258 [running]:
+net/http.(*conn).serve.func1(0xc0001466e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.UpdateCartItem(0xaa0840, 0xc0000c8620, 0xc000162e00)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:40 +0xf9
+net/http.HandlerFunc.ServeHTTP(0x9fd148, 0xaa0840, 0xc0000c8620, 0xc000162e00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8620, 0xc000162e00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8620, 0xc000162e00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001466e0, 0xaa1f80, 0xc000060840)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 00:26:25 http: panic serving 203.208.60.111:47448: runtime error: invalid memory address or nil pointer dereference
+goroutine 27375 [running]:
+net/http.(*conn).serve.func1(0xc000146460)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.UpdateCartItem(0xaa0840, 0xc0000c8460, 0xc000091600)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:40 +0xf9
+net/http.HandlerFunc.ServeHTTP(0x9fd148, 0xaa0840, 0xc0000c8460, 0xc000091600)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8460, 0xc000091600)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8460, 0xc000091600)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146460, 0xaa1f80, 0xc0001c76c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 05:18:23 http: panic serving 116.179.32.67:47338: runtime error: invalid memory address or nil pointer dereference
+goroutine 28612 [running]:
+net/http.(*conn).serve.func1(0xc000146460)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8380, 0xc000090700)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c8380, 0xc000090700)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c8380, 0xc000090700)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8380, 0xc000090700)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8380, 0xc000090700)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146460, 0xaa1f80, 0xc0001c6500)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 08:31:55 http: panic serving 203.208.60.50:40544: runtime error: invalid memory address or nil pointer dereference
+goroutine 29126 [running]:
+net/http.(*conn).serve.func1(0xc000146000)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.UpdateCartItem(0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:40 +0xf9
+net/http.HandlerFunc.ServeHTTP(0x9fd148, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146000, 0xaa1f80, 0xc0001c6040)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:01:42 http: panic serving 111.224.234.216:47361: runtime error: invalid memory address or nil pointer dereference
+goroutine 29638 [running]:
+net/http.(*conn).serve.func1(0xc0001461e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c8620, 0xc000091400)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c8620, 0xc000091400)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8620, 0xc000091400)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8620, 0xc000091400)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001461e0, 0xaa1f80, 0xc0001c7180)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:01:42 http: panic serving 118.81.13.207:14278: runtime error: invalid memory address or nil pointer dereference
+goroutine 29634 [running]:
+net/http.(*conn).serve.func1(0xc000146000)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8a80, 0xc000104200)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c8a80, 0xc000104200)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c8a80, 0xc000104200)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8a80, 0xc000104200)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8a80, 0xc000104200)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146000, 0xaa1f80, 0xc0001c68c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:01:42 http: panic serving 221.213.75.245:61531: runtime error: invalid memory address or nil pointer dereference
+goroutine 29658 [running]:
+net/http.(*conn).serve.func1(0xc000146be0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c8d20, 0xc000105a00)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c8d20, 0xc000105a00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8d20, 0xc000105a00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8d20, 0xc000105a00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146be0, 0xaa1f80, 0xc000061140)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:01:43 http: panic serving 220.250.62.214:47998: runtime error: invalid memory address or nil pointer dereference
+goroutine 29665 [running]:
+net/http.(*conn).serve.func1(0xc000146f00)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c90a0, 0xc000162500)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c90a0, 0xc000162500)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c90a0, 0xc000162500)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c90a0, 0xc000162500)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c90a0, 0xc000162500)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146f00, 0xaa1f80, 0xc000061b80)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:17 http: panic serving 1.85.219.101:40566: runtime error: invalid memory address or nil pointer dereference
+goroutine 29742 [running]:
+net/http.(*conn).serve.func1(0xc0001463c0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c87e0, 0xc000091100)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c87e0, 0xc000091100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c87e0, 0xc000091100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c87e0, 0xc000091100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001463c0, 0xaa1f80, 0xc0000609c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:17 http: panic serving 124.235.138.237:58391: runtime error: invalid memory address or nil pointer dereference
+goroutine 29764 [running]:
+net/http.(*conn).serve.func1(0xc000147180)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8a80, 0xc000162e00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0000c8a80, 0xc000162e00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8a80, 0xc000162e00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8a80, 0xc000162e00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147180, 0xaa1f80, 0xc000297400)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:17 http: panic serving 1.30.24.57:40969: runtime error: invalid memory address or nil pointer dereference
+goroutine 29767 [running]:
+net/http.(*conn).serve.func1(0xc0001472c0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c8c40, 0xc000163000)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c8c40, 0xc000163000)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8c40, 0xc000163000)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8c40, 0xc000163000)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001472c0, 0xaa1f80, 0xc000297580)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:20 http: panic serving 110.177.181.164:55838: runtime error: invalid memory address or nil pointer dereference
+goroutine 29743 [running]:
+net/http.(*conn).serve.func1(0xc000146500)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc000204620, 0xc000212000)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc000204620, 0xc000212000)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000204620, 0xc000212000)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000204620, 0xc000212000)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146500, 0xaa1f80, 0xc000060a40)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:20 http: panic serving 122.96.28.222:50959: runtime error: invalid memory address or nil pointer dereference
+goroutine 29750 [running]:
+net/http.(*conn).serve.func1(0xc000146be0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0002048c0, 0xc0001ca800)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0002048c0, 0xc0001ca800)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0002048c0, 0xc0001ca800)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0002048c0, 0xc0001ca800)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146be0, 0xaa1f80, 0xc000061240)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:21 http: panic serving 111.175.57.115:64515: runtime error: invalid memory address or nil pointer dereference
+goroutine 29839 [running]:
+net/http.(*conn).serve.func1(0xc0001474a0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc000204b60, 0xc000213f00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc000204b60, 0xc000213f00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000204b60, 0xc000213f00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000204b60, 0xc000213f00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001474a0, 0xaa1f80, 0xc000256c00)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:21 http: panic serving 175.152.108.117:25242: runtime error: invalid memory address or nil pointer dereference
+goroutine 29840 [running]:
+net/http.(*conn).serve.func1(0xc000147540)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc000204c40, 0xc000248000)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc000204c40, 0xc000248000)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000204c40, 0xc000248000)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000204c40, 0xc000248000)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147540, 0xaa1f80, 0xc000256c80)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:40 http: panic serving 124.235.138.249:58086: runtime error: invalid memory address or nil pointer dereference
+goroutine 29761 [running]:
+net/http.(*conn).serve.func1(0xc0001470e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc000204d20, 0xc000213200)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc000204d20, 0xc000213200)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000204d20, 0xc000213200)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000204d20, 0xc000213200)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001470e0, 0xaa1f80, 0xc000296e40)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:40 http: panic serving 36.248.88.46:11677: runtime error: invalid memory address or nil pointer dereference
+goroutine 29795 [running]:
+net/http.(*conn).serve.func1(0xc000147360)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c81c0, 0xc000213500)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c81c0, 0xc000213500)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c81c0, 0xc000213500)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c81c0, 0xc000213500)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147360, 0xaa1f80, 0xc000208100)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:40 http: panic serving 220.250.10.58:58180: runtime error: invalid memory address or nil pointer dereference
+goroutine 29796 [running]:
+net/http.(*conn).serve.func1(0xc000147400)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c82a0, 0xc000213800)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c82a0, 0xc000213800)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c82a0, 0xc000213800)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c82a0, 0xc000213800)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147400, 0xaa1f80, 0xc000208180)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:40 http: panic serving 221.13.12.13:45778: runtime error: invalid memory address or nil pointer dereference
+goroutine 29766 [running]:
+net/http.(*conn).serve.func1(0xc000147220)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8380, 0xc000213b00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c8380, 0xc000213b00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c8380, 0xc000213b00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8380, 0xc000213b00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8380, 0xc000213b00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147220, 0xaa1f80, 0xc000297500)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:46 http: panic serving 1.28.132.188:46193: runtime error: invalid memory address or nil pointer dereference
+goroutine 29848 [running]:
+net/http.(*conn).serve.func1(0xc0001461e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c8540, 0xc000090500)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c8540, 0xc000090500)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8540, 0xc000090500)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8540, 0xc000090500)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001461e0, 0xaa1f80, 0xc000060540)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:46 http: panic serving 110.167.215.80:15620: runtime error: invalid memory address or nil pointer dereference
+goroutine 29849 [running]:
+net/http.(*conn).serve.func1(0xc0001463c0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8620, 0xc000090600)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0000c8620, 0xc000090600)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8620, 0xc000090600)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8620, 0xc000090600)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001463c0, 0xaa1f80, 0xc0000605c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:46 http: panic serving 223.166.75.136:11272: runtime error: invalid memory address or nil pointer dereference
+goroutine 29847 [running]:
+net/http.(*conn).serve.func1(0xc000146000)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8460, 0xc000090100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c8460, 0xc000090100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c8460, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8460, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8460, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146000, 0xaa1f80, 0xc0000604c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:46 http: panic serving 110.83.32.80:47218: runtime error: invalid memory address or nil pointer dereference
+goroutine 29850 [running]:
+net/http.(*conn).serve.func1(0xc000146500)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c8700, 0xc000090700)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c8700, 0xc000090700)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8700, 0xc000090700)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8700, 0xc000090700)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146500, 0xaa1f80, 0xc0000606c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:47 http: panic serving 175.184.165.34:30939: runtime error: invalid memory address or nil pointer dereference
+goroutine 29744 [running]:
+net/http.(*conn).serve.func1(0xc000146640)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c87e0, 0xc000212f00)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c87e0, 0xc000212f00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c87e0, 0xc000212f00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c87e0, 0xc000212f00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146640, 0xaa1f80, 0xc000060c00)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:14:47 http: panic serving 116.113.12.225:42359: runtime error: invalid memory address or nil pointer dereference
+goroutine 29747 [running]:
+net/http.(*conn).serve.func1(0xc000146960)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c88c0, 0xc000213e00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c88c0, 0xc000213e00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c88c0, 0xc000213e00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c88c0, 0xc000213e00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c88c0, 0xc000213e00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146960, 0xaa1f80, 0xc000060f80)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:15:18 http: panic serving 60.13.138.5:17001: runtime error: invalid memory address or nil pointer dereference
+goroutine 29857 [running]:
+net/http.(*conn).serve.func1(0xc0001466e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c89a0, 0xc000090800)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c89a0, 0xc000090800)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c89a0, 0xc000090800)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c89a0, 0xc000090800)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c89a0, 0xc000090800)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001466e0, 0xaa1f80, 0xc000060dc0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:18:51 http: panic serving 182.88.77.95:40366: runtime error: invalid memory address or nil pointer dereference
+goroutine 29872 [running]:
+net/http.(*conn).serve.func1(0xc000146500)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8460, 0xc000091800)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0000c8460, 0xc000091800)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8460, 0xc000091800)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8460, 0xc000091800)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146500, 0xaa1f80, 0xc000061600)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:18:52 http: panic serving 110.177.178.180:47380: runtime error: invalid memory address or nil pointer dereference
+goroutine 29877 [running]:
+net/http.(*conn).serve.func1(0xc0001466e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c8620, 0xc000104100)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c8620, 0xc000104100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8620, 0xc000104100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8620, 0xc000104100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001466e0, 0xaa1f80, 0xc000061dc0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:18:52 http: panic serving 175.184.165.193:27053: runtime error: invalid memory address or nil pointer dereference
+goroutine 29881 [running]:
+net/http.(*conn).serve.func1(0xc000146be0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c87e0, 0xc000104300)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c87e0, 0xc000104300)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c87e0, 0xc000104300)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c87e0, 0xc000104300)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146be0, 0xaa1f80, 0xc000208000)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:18:52 http: panic serving 124.227.31.2:23796: runtime error: invalid memory address or nil pointer dereference
+goroutine 29879 [running]:
+net/http.(*conn).serve.func1(0xc000146960)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8700, 0xc000104200)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c8700, 0xc000104200)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c8700, 0xc000104200)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8700, 0xc000104200)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8700, 0xc000104200)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146960, 0xaa1f80, 0xc000061ec0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:21:00 http: panic serving 182.138.158.64:25323: runtime error: invalid memory address or nil pointer dereference
+goroutine 29901 [running]:
+net/http.(*conn).serve.func1(0xc000146500)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c8460, 0xc000091800)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c8460, 0xc000091800)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8460, 0xc000091800)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8460, 0xc000091800)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146500, 0xaa1f80, 0xc000061480)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:21:01 http: panic serving 219.140.119.197:27543: runtime error: invalid memory address or nil pointer dereference
+goroutine 29915 [running]:
+net/http.(*conn).serve.func1(0xc000146f00)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c88c0, 0xc000107300)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c88c0, 0xc000107300)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c88c0, 0xc000107300)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c88c0, 0xc000107300)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146f00, 0xaa1f80, 0xc000208b80)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:21:01 http: panic serving 110.177.178.49:10257: runtime error: invalid memory address or nil pointer dereference
+goroutine 29917 [running]:
+net/http.(*conn).serve.func1(0xc0001470e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c89a0, 0xc000107400)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0000c89a0, 0xc000107400)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c89a0, 0xc000107400)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c89a0, 0xc000107400)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001470e0, 0xaa1f80, 0xc000208c80)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:21:02 http: panic serving 111.224.235.213:14615: runtime error: invalid memory address or nil pointer dereference
+goroutine 29919 [running]:
+net/http.(*conn).serve.func1(0xc000147180)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8a80, 0xc000107500)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c8a80, 0xc000107500)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c8a80, 0xc000107500)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8a80, 0xc000107500)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8a80, 0xc000107500)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147180, 0xaa1f80, 0xc000208e00)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:22:34 http: panic serving 203.208.60.48:57946: runtime error: invalid memory address or nil pointer dereference
+goroutine 29927 [running]:
+net/http.(*conn).serve.func1(0xc000146000)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.UpdateCartItem(0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:40 +0xf9
+net/http.HandlerFunc.ServeHTTP(0x9fd148, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146000, 0xaa1f80, 0xc000208000)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:25:56 http: panic serving 1.30.28.107:59866: runtime error: invalid memory address or nil pointer dereference
+goroutine 29939 [running]:
+net/http.(*conn).serve.func1(0xc000146500)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8c40, 0xc00010af00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c8c40, 0xc00010af00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c8c40, 0xc00010af00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8c40, 0xc00010af00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8c40, 0xc00010af00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146500, 0xaa1f80, 0xc0002090c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:25:57 http: panic serving 125.72.95.200:11895: runtime error: invalid memory address or nil pointer dereference
+goroutine 29940 [running]:
+net/http.(*conn).serve.func1(0xc000146640)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c8d20, 0xc00010b600)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c8d20, 0xc00010b600)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8d20, 0xc00010b600)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8d20, 0xc00010b600)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146640, 0xaa1f80, 0xc000209180)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:25:57 http: panic serving 101.249.60.211:21043: runtime error: invalid memory address or nil pointer dereference
+goroutine 29946 [running]:
+net/http.(*conn).serve.func1(0xc000146960)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c8e00, 0xc00010a900)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c8e00, 0xc00010a900)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8e00, 0xc00010a900)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8e00, 0xc00010a900)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146960, 0xaa1f80, 0xc0002098c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:25:57 http: panic serving 180.95.238.130:28587: runtime error: invalid memory address or nil pointer dereference
+goroutine 29969 [running]:
+net/http.(*conn).serve.func1(0xc000147220)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c9180, 0xc00016af00)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c9180, 0xc00016af00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c9180, 0xc00016af00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c9180, 0xc00016af00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147220, 0xaa1f80, 0xc0001c6780)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:25:57 http: panic serving 113.58.227.216:41179: runtime error: invalid memory address or nil pointer dereference
+goroutine 29964 [running]:
+net/http.(*conn).serve.func1(0xc000146f00)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c9340, 0xc00016a900)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c9340, 0xc00016a900)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c9340, 0xc00016a900)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c9340, 0xc00016a900)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000146f00, 0xaa1f80, 0xc0001c60c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:25:57 http: panic serving 123.157.192.21:15536: runtime error: invalid memory address or nil pointer dereference
+goroutine 29966 [running]:
+net/http.(*conn).serve.func1(0xc0001470e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c9500, 0xc00016aa00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c9500, 0xc00016aa00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c9500, 0xc00016aa00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c9500, 0xc00016aa00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c9500, 0xc00016aa00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001470e0, 0xaa1f80, 0xc0001c6180)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:04 http: panic serving 1.28.88.130:62247: runtime error: invalid memory address or nil pointer dereference
+goroutine 29983 [running]:
+net/http.(*conn).serve.func1(0xc000147400)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0002276c0, 0xc00028c100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0002276c0, 0xc00028c100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0002276c0, 0xc00028c100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0002276c0, 0xc00028c100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147400, 0xaa1f80, 0xc0001c7a80)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:05 http: panic serving 119.39.47.181:62682: runtime error: invalid memory address or nil pointer dereference
+goroutine 29992 [running]:
+net/http.(*conn).serve.func1(0xc0001474a0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc000227c00, 0xc00028d400)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc000227c00, 0xc00028d400)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000227c00, 0xc00028d400)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000227c00, 0xc00028d400)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001474a0, 0xaa1f80, 0xc0002968c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:05 http: panic serving 221.13.12.216:26702: runtime error: invalid memory address or nil pointer dereference
+goroutine 30069 [running]:
+net/http.(*conn).serve.func1(0xc000147680)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc000227ce0, 0xc0002f0d00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc000227ce0, 0xc0002f0d00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000227ce0, 0xc0002f0d00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000227ce0, 0xc0002f0d00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147680, 0xaa1f80, 0xc00030e040)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:05 http: panic serving 171.37.39.68:36976: runtime error: invalid memory address or nil pointer dereference
+goroutine 30003 [running]:
+net/http.(*conn).serve.func1(0xc000147540)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc000227dc0, 0xc00028da00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc000227dc0, 0xc00028da00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc000227dc0, 0xc00028da00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000227dc0, 0xc00028da00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000227dc0, 0xc00028da00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147540, 0xaa1f80, 0xc000297780)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:05 http: panic serving 183.157.84.113:28101: runtime error: invalid memory address or nil pointer dereference
+goroutine 29941 [running]:
+net/http.(*conn).serve.func1(0xc0001466e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc000227ea0, 0xc0002f0000)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc000227ea0, 0xc0002f0000)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000227ea0, 0xc0002f0000)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000227ea0, 0xc0002f0000)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001466e0, 0xaa1f80, 0xc0002092c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:05 http: panic serving 122.96.29.106:40840: runtime error: invalid memory address or nil pointer dereference
+goroutine 29970 [running]:
+net/http.(*conn).serve.func1(0xc0001472c0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0003220e0, 0xc00025b500)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0003220e0, 0xc00025b500)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0003220e0, 0xc00025b500)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0003220e0, 0xc00025b500)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001472c0, 0xaa1f80, 0xc0001c6800)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:06 http: panic serving 60.13.6.213:34084: runtime error: invalid memory address or nil pointer dereference
+goroutine 30078 [running]:
+net/http.(*conn).serve.func1(0xc000147720)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0003222a0, 0xc0002f1a00)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0003222a0, 0xc0002f1a00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0003222a0, 0xc0002f1a00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0003222a0, 0xc0002f1a00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147720, 0xaa1f80, 0xc00030ea40)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:06 http: panic serving 183.160.250.35:51965: runtime error: invalid memory address or nil pointer dereference
+goroutine 30080 [running]:
+net/http.(*conn).serve.func1(0xc000147860)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc000322460, 0xc0002f1c00)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc000322460, 0xc0002f1c00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000322460, 0xc0002f1c00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000322460, 0xc0002f1c00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147860, 0xaa1f80, 0xc00030eb40)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:06 http: panic serving 219.140.119.121:61081: runtime error: invalid memory address or nil pointer dereference
+goroutine 30079 [running]:
+net/http.(*conn).serve.func1(0xc0001477c0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc000322380, 0xc0002f1b00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc000322380, 0xc0002f1b00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc000322380, 0xc0002f1b00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000322380, 0xc0002f1b00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000322380, 0xc0002f1b00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001477c0, 0xaa1f80, 0xc00030eac0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:09 http: panic serving 125.84.238.20:42731: runtime error: invalid memory address or nil pointer dereference
+goroutine 30084 [running]:
+net/http.(*conn).serve.func1(0xc000147900)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc000322540, 0xc0002f1d00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc000322540, 0xc0002f1d00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000322540, 0xc0002f1d00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000322540, 0xc0002f1d00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147900, 0xaa1f80, 0xc00030ed00)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:10 http: panic serving 112.80.136.233:60449: runtime error: invalid memory address or nil pointer dereference
+goroutine 29935 [running]:
+net/http.(*conn).serve.func1(0xc0001463c0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc000322620, 0xc00025bb00)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc000322620, 0xc00025bb00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000322620, 0xc00025bb00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000322620, 0xc00025bb00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001463c0, 0xaa1f80, 0xc000208b80)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:11 http: panic serving 36.5.218.151:44485: runtime error: invalid memory address or nil pointer dereference
+goroutine 29968 [running]:
+net/http.(*conn).serve.func1(0xc000147180)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc000322700, 0xc0002f1300)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc000322700, 0xc0002f1300)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000322700, 0xc0002f1300)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000322700, 0xc0002f1300)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147180, 0xaa1f80, 0xc0001c6600)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:11 http: panic serving 220.250.63.100:44185: runtime error: invalid memory address or nil pointer dereference
+goroutine 29971 [running]:
+net/http.(*conn).serve.func1(0xc000147360)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0003227e0, 0xc0002f1900)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0003227e0, 0xc0002f1900)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0003227e0, 0xc0002f1900)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0003227e0, 0xc0002f1900)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0003227e0, 0xc0002f1900)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147360, 0xaa1f80, 0xc0001c6ac0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:11 http: panic serving 36.32.3.242:52575: runtime error: invalid memory address or nil pointer dereference
+goroutine 30089 [running]:
+net/http.(*conn).serve.func1(0xc0001479a0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0003228c0, 0xc0002f1e00)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0003228c0, 0xc0002f1e00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0003228c0, 0xc0002f1e00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0003228c0, 0xc0002f1e00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0001479a0, 0xaa1f80, 0xc00030ef80)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:12 http: panic serving 171.37.39.163:61251: runtime error: invalid memory address or nil pointer dereference
+goroutine 30091 [running]:
+net/http.(*conn).serve.func1(0xc000147a40)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc000322a80, 0xc0002f1f00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc000322a80, 0xc0002f1f00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000322a80, 0xc0002f1f00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000322a80, 0xc0002f1f00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147a40, 0xaa1f80, 0xc00030f080)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:12 http: panic serving 123.145.28.189:44822: runtime error: invalid memory address or nil pointer dereference
+goroutine 30093 [running]:
+net/http.(*conn).serve.func1(0xc000147b80)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0003229a0, 0xc000100100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0003229a0, 0xc000100100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0003229a0, 0xc000100100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0003229a0, 0xc000100100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0003229a0, 0xc000100100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147b80, 0xaa1f80, 0xc00030f180)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/29 12:26:12 http: panic serving 220.163.33.141:21480: runtime error: invalid memory address or nil pointer dereference
+goroutine 30092 [running]:
+net/http.(*conn).serve.func1(0xc000147ae0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc000322b60, 0xc000100000)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc000322b60, 0xc000100000)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc000322b60, 0xc000100000)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc000322b60, 0xc000100000)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000147ae0, 0xaa1f80, 0xc00030f100)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/30 07:24:34 http: panic serving 61.241.50.63:63450: runtime error: invalid memory address or nil pointer dereference
+goroutine 36894 [running]:
+net/http.(*conn).serve.func1(0xc000310000)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000310000, 0xaa1f80, 0xc000256000)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/30 08:11:49 http: panic serving 183.192.179.16:41021: runtime error: invalid memory address or nil pointer dereference
+goroutine 37027 [running]:
+net/http.(*conn).serve.func1(0xc000310000)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000310000, 0xaa1f80, 0xc000256000)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/30 09:49:18 http: panic serving 58.247.212.239:40973: runtime error: invalid memory address or nil pointer dereference
+goroutine 37253 [running]:
+net/http.(*conn).serve.func1(0xc000310000)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c81c0, 0xc000090100)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000310000, 0xaa1f80, 0xc000256000)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/30 13:16:44 http: panic serving 182.254.52.17:34394: runtime error: invalid memory address or nil pointer dereference
+goroutine 37685 [running]:
+net/http.(*conn).serve.func1(0xc0003101e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8380, 0xc000090f00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c8380, 0xc000090f00)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c8380, 0xc000090f00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8380, 0xc000090f00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8380, 0xc000090f00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0003101e0, 0xaa1f80, 0xc0002569c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/11/30 13:39:18 http: panic serving 61.241.50.63:58857: runtime error: invalid memory address or nil pointer dereference
+goroutine 37721 [running]:
+net/http.(*conn).serve.func1(0xc000310140)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.UpdateCartItem(0xaa0840, 0xc0000c82a0, 0xc000090a00)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:40 +0xf9
+net/http.HandlerFunc.ServeHTTP(0x9fd148, 0xaa0840, 0xc0000c82a0, 0xc000090a00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c82a0, 0xc000090a00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c82a0, 0xc000090a00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000310140, 0xaa1f80, 0xc000256580)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/12/02 06:59:39 http: panic serving 106.11.156.35:37077: runtime error: invalid memory address or nil pointer dereference
+goroutine 54645 [running]:
+net/http.(*conn).serve.func1(0xc000310500)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c81c0, 0xc000091400)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c81c0, 0xc000091400)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c81c0, 0xc000091400)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c81c0, 0xc000091400)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000310500, 0xaa1f80, 0xc00016ec00)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/12/03 03:00:41 http: panic serving 106.11.153.58:43200: runtime error: invalid memory address or nil pointer dereference
+goroutine 59396 [running]:
+net/http.(*conn).serve.func1(0xc000310320)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c8620, 0xc000091a00)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c8620, 0xc000091a00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8620, 0xc000091a00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8620, 0xc000091a00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000310320, 0xaa1f80, 0xc0000614c0)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/12/04 23:14:38 http: panic serving 36.248.89.75:51801: runtime error: invalid memory address or nil pointer dereference
+goroutine 69439 [running]:
+net/http.(*conn).serve.func1(0xc0003106e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c87e0, 0xc000114c00)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c87e0, 0xc000114c00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c87e0, 0xc000114c00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c87e0, 0xc000114c00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0003106e0, 0xaa1f80, 0xc000060480)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/12/04 23:14:39 http: panic serving 171.36.98.163:22443: runtime error: invalid memory address or nil pointer dereference
+goroutine 69442 [running]:
+net/http.(*conn).serve.func1(0xc000310820)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c88c0, 0xc000115300)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c88c0, 0xc000115300)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c88c0, 0xc000115300)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c88c0, 0xc000115300)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c88c0, 0xc000115300)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000310820, 0xaa1f80, 0xc000060a00)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/12/04 23:14:39 http: panic serving 171.36.97.95:40669: runtime error: invalid memory address or nil pointer dereference
+goroutine 69444 [running]:
+net/http.(*conn).serve.func1(0xc0003108c0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c89a0, 0xc000115400)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c89a0, 0xc000115400)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c89a0, 0xc000115400)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c89a0, 0xc000115400)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0003108c0, 0xaa1f80, 0xc000060c00)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/12/04 23:14:39 http: panic serving 59.52.179.85:38461: runtime error: invalid memory address or nil pointer dereference
+goroutine 69455 [running]:
+net/http.(*conn).serve.func1(0xc000310b40)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8d20, 0xc00016a700)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0000c8d20, 0xc00016a700)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8d20, 0xc00016a700)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8d20, 0xc00016a700)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000310b40, 0xaa1f80, 0xc000061d40)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/12/04 23:16:52 http: panic serving 223.167.74.184:60353: runtime error: invalid memory address or nil pointer dereference
+goroutine 69466 [running]:
+net/http.(*conn).serve.func1(0xc000310320)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c8460, 0xc000091600)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+net/http.HandlerFunc.ServeHTTP(0x9fd0e8, 0xaa0840, 0xc0000c8460, 0xc000091600)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8460, 0xc000091600)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8460, 0xc000091600)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000310320, 0xaa1f80, 0xc000209080)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/12/04 23:16:53 http: panic serving 112.66.109.226:21097: runtime error: invalid memory address or nil pointer dereference
+goroutine 69477 [running]:
+net/http.(*conn).serve.func1(0xc0003106e0)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.GetCartInfo(0xaa0840, 0xc0000c87e0, 0xc00010c900)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:66 +0x3c
+github.com/shuwenhe/shuwen-shop/controller.DeleteCart(0xaa0840, 0xc0000c87e0, 0xc00010c900)
+	/www/wwwroot/shuwenshop/controller/carthandler.go:82 +0x7b
+net/http.HandlerFunc.ServeHTTP(0x9fd0e0, 0xaa0840, 0xc0000c87e0, 0xc00010c900)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c87e0, 0xc00010c900)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c87e0, 0xc00010c900)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0003106e0, 0xaa1f80, 0xc000060140)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/12/04 23:16:53 http: panic serving 118.81.225.38:42069: runtime error: invalid memory address or nil pointer dereference
+goroutine 69479 [running]:
+net/http.(*conn).serve.func1(0xc000310820)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.DeleteCartItem(0xaa0840, 0xc0000c88c0, 0xc00010ca00)
+	/www/wwwroot/shuwenshop/controller/cartItemhandler.go:19 +0xad
+net/http.HandlerFunc.ServeHTTP(0x9fd0d8, 0xaa0840, 0xc0000c88c0, 0xc00010ca00)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c88c0, 0xc00010ca00)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c88c0, 0xc00010ca00)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000310820, 0xaa1f80, 0xc000060480)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
+2020/12/04 23:16:53 http: panic serving 111.224.234.35:22336: runtime error: invalid memory address or nil pointer dereference
+goroutine 69484 [running]:
+net/http.(*conn).serve.func1(0xc000310960)
+	/usr/lib/golang/src/net/http/server.go:1767 +0x139
+panic(0x9432a0, 0xdfd240)
+	/usr/lib/golang/src/runtime/panic.go:679 +0x1b2
+github.com/shuwenhe/shuwen-shop/controller.Checkout(0xaa0840, 0xc0000c8a80, 0xc00010d200)
+	/www/wwwroot/shuwenshop/controller/orderhandler.go:17 +0x50
+net/http.HandlerFunc.ServeHTTP(0x9fd0c8, 0xaa0840, 0xc0000c8a80, 0xc00010d200)
+	/usr/lib/golang/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xe0e880, 0xaa0840, 0xc0000c8a80, 0xc00010d200)
+	/usr/lib/golang/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000c80e0, 0xaa0840, 0xc0000c8a80, 0xc00010d200)
+	/usr/lib/golang/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000310960, 0xaa1f80, 0xc000060c40)
+	/usr/lib/golang/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/golang/src/net/http/server.go:2928 +0x384
