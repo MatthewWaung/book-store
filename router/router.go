@@ -16,9 +16,15 @@ func Run() {
 	Cart()
 	CartItem()
 	Order()
+	Setup()
 
 	port := viper.GetString("server.port")
 	http.ListenAndServe(port, nil) // Listen and serve
+}
+
+func Setup() {
+	http.HandleFunc("/addAddress", controller.AddAddress)
+	http.HandleFunc("/deleteAddressByID", controller.DeleteAddressByID)
 }
 
 // UserRouter User router
@@ -29,7 +35,7 @@ func User() {
 	http.HandleFunc("/checkUserName", controller.CheckUserName)
 }
 
-func Item()  {
+func Item() {
 	http.HandleFunc("/", controller.GetPageBooksByPrice)
 	http.HandleFunc("/getPageBooks", controller.GetPageBooks)
 	http.HandleFunc("/getPageBooksByPrice", controller.GetPageBooksByPrice)
@@ -51,7 +57,7 @@ func CartItem() {
 	http.HandleFunc("/updateCartItem", controller.UpdateCartItem) // updateCartItem
 }
 
-func Order()  {
+func Order() {
 	http.HandleFunc("/checkout", controller.Checkout)
 	http.HandleFunc("/getOrders", controller.GetOrders)       // Get all orders
 	http.HandleFunc("/getOrderInfo", controller.GetOrderInfo) // Get all orders
