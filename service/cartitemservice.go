@@ -1,12 +1,15 @@
 package service
 
 import (
+	"fmt"
+
 	"github.com/shuwenhe/shuwen-shop/dao"
 	"github.com/shuwenhe/shuwen-shop/model"
 )
 
 func GetCartItemByBookIDAndCartID(bookID, cartID string) (*model.CartItem, error) {
 	cartItem, err := dao.GetCartItemByBookIDAndCartID(bookID, cartID)
+	fmt.Println("bookID-dao = ", cartItem)
 	if err != nil {
 		return nil, err
 	}

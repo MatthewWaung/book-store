@@ -45,7 +45,7 @@ func DeleteItem(bookId string) error {
 // GetItemByID 根据图书的id从数据库中查询一本图书
 func GetItemByID(bookID string) (*model.Item, error) {
 	sql := "select id,title,author,price,sales,stock,img_path from item where id=?" // sql
-	row := utils.Db.QueryRow(sql, bookID)                                            // 执行
+	row := utils.Db.QueryRow(sql, bookID)                                           // 执行
 	book := &model.Item{}
 	row.Scan(&book.ID, &book.Title, &book.Author, &book.Price, &book.Sales, &book.Stock, &book.ImgPath) // 为book中的字段赋值
 	return book, nil
@@ -53,7 +53,7 @@ func GetItemByID(bookID string) (*model.Item, error) {
 
 // UpdateItem update book
 func UpdateItem(item *model.Item) error {
-	sql := "update item set title=?,author=?,price=?,sales=?,stock=? where id=?"                      // sql
+	sql := "update item set title=?,author=?,price=?,sales=?,stock=? where id=?"                       // sql
 	_, err := utils.Db.Exec(sql, item.Title, item.Author, item.Price, item.Sales, item.Stock, item.ID) // 执行
 	if err != nil {
 		return err
@@ -64,7 +64,7 @@ func UpdateItem(item *model.Item) error {
 // GetPageBooks 获取带分页的图书信息
 func GetPageItems(pageNo string) (*model.Page, error) {
 	iPageNo, _ := strconv.ParseInt(pageNo, 10, 64) // 将页码转成int64类型
-	sql := "select count(*) from item"            // 获取数据库中的总记录数
+	sql := "select count(*) from item"             // 获取数据库中的总记录数
 	var totalRecord int64                          // 总的记录数
 	row := utils.Db.QueryRow(sql)                  // 执行
 	row.Scan(&totalRecord)
@@ -100,10 +100,10 @@ func GetPageItems(pageNo string) (*model.Page, error) {
 
 // GetPageBooksByPrice 获取带分页和价格范围的图书信息
 func GetPageItemsByPrice(pageNo, minPrice, maxPrice string) (*model.Page, error) {
-	iPageNo, _ := strconv.ParseInt(pageNo, 10, 64)                  // 将页码转成int64类型
+	iPageNo, _ := strconv.ParseInt(pageNo, 10, 64)                 // 将页码转成int64类型
 	sql := "select count(*) from item where price between ? and ?" // 获取数据库中的总记录数
-	var totalRecord int64                                           // 总的记录数
-	row := utils.Db.QueryRow(sql, minPrice, maxPrice)               // 执行
+	var totalRecord int64                                          // 总的记录数
+	row := utils.Db.QueryRow(sql, minPrice, maxPrice)              // 执行
 	row.Scan(&totalRecord)
 	var pageSize int64 = 4 // 每页显示4本书
 	var totalPageNo int64  // 总页数

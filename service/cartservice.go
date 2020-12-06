@@ -14,6 +14,7 @@ func GetItemByID(bookID string) (*model.Item, error) {
 	return item, nil
 }
 
+// GetCartByUserID Get cart by userID
 func GetCartByUserID(userID int) (*model.Cart, error) {
 	cart, err := dao.GetCartByUserID(userID)
 	if err != nil {

@@ -2,27 +2,26 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Cart</title>
+    <title>购物车</title>
     <link type="text/css" rel="stylesheet" href="/static/css/style.css" />
     <script src="static/script/jquery-1.7.2.js"></script>
     <script>
       $(function () {
         $("#emptyCart").click(function () {
           // Bind the click event to the hyperlink that clears the shopping cart
-          return confirm("Are you sure empty the cart?"); // Are you sure empty the cart?
+          return confirm("确定清空购物车吗?"); // Are you sure empty the cart?
         });
 
         $(".deleteCartItem").click(function () {
           // Bind the click event to the hyperlink of the deleted cart
           var title = $(this).attr("id"); // return the value of the book's title Get the name of the book
-          return confirm("Are you sure delete to " + title + " this book?");
+          return confirm("确定要删除 " + title + " 这件商品吗?");
         });
 
         $(".updateCartItem").change(function () {
           // Bind the change event to the input that enters the number of cartItems
           var cartItemId = $(this).attr("id"); // Get the ID of the cartItem
           var bookCount = $(this).val(); // Get the number of books entered by the user
-          //location = "/updateCartItem?cartItemId="+cartItemId+"&bookCount="+bookCount;// send request
           var url = "/updateCartItem";
           var params = { cartItemId: cartItemId, bookCount: bookCount };
           var $tdEle = $(this).parent().next().next();
@@ -44,7 +43,6 @@
     <div id="header">
       <img class="logo_img" alt="" src="/static/img/logo.gif" />
       <span class="wel_word">购物车</span>
-      <a href="/getMyorder">我的订单</a>
       {{if .UserID}}
       <div>
         <span>欢迎<span class="um_span">{{.UserName}}</span>光临书城</span>
@@ -67,7 +65,7 @@
       {{if .}}
       <table>
         <tr>
-          <td>商品名称</td>
+          <td>名称</td>
           <td>数量</td>
           <td>单价</td>
           <td>金额</td>

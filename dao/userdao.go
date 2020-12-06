@@ -7,7 +7,7 @@ import (
 )
 
 func CheckUserNameAndPassword(username, password string) (*model.User, error) {
-	sql := "select id,username,password,email from users where username = ? and password = ?"
+	sql := "select id,username,password,email from user where username = ? and password = ?"
 	row := utils.Db.QueryRow(sql, username, password)
 	user := &model.User{}
 	row.Scan(&user.ID, &user.Username, &user.Password, &user.Email)
