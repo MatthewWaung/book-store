@@ -1,8 +1,6 @@
 package dao
 
 import (
-	"fmt"
-
 	utils "github.com/shuwenhe/shuwen-shop/db"
 
 	"github.com/shuwenhe/shuwen-shop/model"
@@ -11,30 +9,29 @@ import (
 // AddCart Insert cart item into cart table
 func AddCart(cart *model.Cart) error {
 	sql := "insert into cart(id,total_count,total_amount,user_id) values(?,?,?,?)"                      // ID is not an auto-incrementing primary key
-	_, err := utils.Db.Exec(sql, cart.CartID, cart.GetTotalCount(), cart.GetTotalAmount(), cart.UserID) // 执行
+	_, err := utils.Db.Exec(sql, cart.CartID, cart.GetTotalCount(), cart.GetTotalAmount(), cart.UserID) // Execute
 	if err != nil {
 		return err
 	}
-	cartItems := cart.CartItems          // 获取购物车中所有购物项
-	for _, cartItem := range cartItems { // 遍历得到每一个购物项
-		AddCartItem(cartItem) // 将购物项保存到数据库中
+	cartItems := cart.CartItems          // Get all items in the cart
+	for _, cartItem := range cartItems { // Traverse to get every item
+		AddCartItem(cartItem) // Save items to the database
 	}
 	return nil
 }
 
-// GetCartByUserID 通过用户ID去数据库中查询购物车
+// GetCartByUserID Check the cart in the database by user ID
 func GetCartByUserID(userID int) (*model.Cart, error) {
 	sql := "select id,total_count,total_amount,user_id from cart where user_id = ?" // sql
-	row := utils.Db.QueryRow(sql, userID)                                           // 执行sql
+	row := utils.Db.QueryRow(sql, userID)                                           // Execute sql
 	cart := &model.Cart{}
 	err := row.Scan(&cart.CartID, &cart.TotalCount, &cart.TotalAmount, &cart.UserID)
 	if err != nil {
 		return nil, err
 	}
-	cartItems, _ := GetCartItemsByCartID(cart.CartID) // 通过cartID获取cartItems，对数据的整合，全局观，需要哪个func，然后再写，架构思维(全局观(预判(先见之明(准备好了再干))))要有，首先要明确做什么，然后才能谈怎么做
-	cart.CartItems = cartItems                        // 将获取的cartItems的slice存入cart结构体中的cartItems
-	fmt.Println("cartItems-cartdao = ", cart.CartItems)
-	return cart, nil //返回
+	cartItems, _ := GetCartItemsByCartID(cart.CartID) // Get cartItems by cartID
+	cart.CartItems = cartItems                        // Store the slice of the obtained cartItems into the cartItems in the cart structure
+	return cart, nil
 }
 
 // UpdateCart Update the total number and total amount of books in the shopping cart
