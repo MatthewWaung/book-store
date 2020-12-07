@@ -37,7 +37,7 @@ func AddBook2Cart(w http.ResponseWriter, r *http.Request) {
 				cart.CartItems = append(cart.CartItems, cartItem) // Add items to the slice of the current cart
 				service.AddCartItem(cartItem)                     // Add the newly created shopping item to the data
 			}
-			service.UpdateCart(cart) // 不管之前购物车中是否有当前对应的购物项，都需要更新购物车中的图书的总数量和总价格
+			service.UpdateCart(cart) // Regardless of whether there is a corresponding shopping item in the previous shopping cart, the total quantity and total price of the books in the shopping cart need to be updated
 		} else { // 当前用户没有购物车，需要创建一个购物车并添加到数据库中
 			cartID := utils.CreateUUID() // 生成购物车id
 			cart := &model.Cart{         // 1.创建购物车，可以不一次赋值

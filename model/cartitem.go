@@ -2,15 +2,15 @@ package model
 
 // CartItem Cart Item struct
 type CartItem struct {
-	CartItemID int64   // 购物项ID
-	Item       *Item   // 每个购物项中商品信息（组合(c++/java继承)）
-	Count      int64   // 购物项中图书的数量
-	Amount     float64 // 购物项目中金额小计,通过计算得到
-	CartID     string  // 当前购物项属于哪个购物车
+	ID     int64   // CartItem ID
+	Item   *Item   // Product information in each cart item
+	Count  int64   // The number of items in the cart item
+	Amount float64 // Subtotal of the amount in the cart item, obtained by calculation
+	CartID string  // Which cart the current cart item belongs to
 }
 
-// GetAmount 获取购物项中金额小计的，由图书的价格和图书的数量计算得到
+// GetAmount Get the subtotal of the amount in the item, calculated from the price of the product and the quantity of the product
 func (cartItem *CartItem) GetAmount() float64 {
-	price := cartItem.Item.Price // 获取当前购物项中图书的价格
+	price := cartItem.Item.Price // Get the price of the product in the current cart item
 	return float64(cartItem.Count) * price
 }

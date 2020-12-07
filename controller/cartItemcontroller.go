@@ -20,7 +20,7 @@ func DeleteCartItem(w http.ResponseWriter, r *http.Request) {
 	cart, _ := service.GetCartByUserID(userID) // Get the cart base on the userID
 	cartItems := cart.CartItems                // Get the cartItems in the cart
 	for k, v := range cartItems {              // Range to get every cartItem
-		if v.CartItemID == iCartItemID { // Find the cart Item to delete
+		if v.ID == iCartItemID { // Find the cart Item to delete
 			cartItems = append(cartItems[:k], cartItems[k+1:]...) // Remove the current cartItem from the cartItems's slice
 			cart.CartItems = cartItems                            // Assign the slice after deleting the item to the slice in the cart again
 			service.DeleteCartItemByID(cartItemID)                // Delete the current cartItems from the database
@@ -41,7 +41,7 @@ func UpdateCartItem(w http.ResponseWriter, r *http.Request) {
 	cart, _ := dao.GetCartByUserID(userID) // Get the cart of the user
 	cartItems := cart.CartItems            // Get all cartItmes in the cart
 	for _, v := range cartItems {          // Range the cartItems slice get every cartItem
-		if v.CartItemID == iCartItemID { // Find the update cartItem
+		if v.ID == iCartItemID { // Find the update cartItem
 			v.Count = iBookCount
 			dao.UpdateBookCount(v)
 		}
@@ -54,7 +54,7 @@ func UpdateCartItem(w http.ResponseWriter, r *http.Request) {
 	var amount float64
 	cIs := cart.CartItems
 	for _, v := range cIs {
-		if iCartItemID == v.CartItemID {
+		if iCartItemID == v.ID {
 			amount = v.Amount
 		}
 	}

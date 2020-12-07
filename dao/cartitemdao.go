@@ -8,23 +8,23 @@ import (
 // AddCartItem Insert item into the cart items table
 func AddCartItem(cartItem *model.CartItem) error {
 	sql := "insert into cart_item(count,amount,book_id,cart_id) values(?,?,?,?)"                          // ID is an auto-increment primary key
-	_, err := utils.Db.Exec(sql, cartItem.Count, cartItem.GetAmount(), cartItem.Item.ID, cartItem.CartID) // 执行
+	_, err := utils.Db.Exec(sql, cartItem.Count, cartItem.GetAmount(), cartItem.Item.ID, cartItem.CartID) // Execute
 	if err != nil {
 		return err
 	}
 	return nil
 }
 
-// GetCartItemByBookIDAndCartID 根据图书的ID获取对应的购物项
-func GetCartItemByBookIDAndCartID(bookID, cartID string) (*model.CartItem, error) {
+// GetCartItemByBookIDAndCartID Get the corresponding cart item according to the ID of the item
+func GetCartItemByBookIDAndCartID(itemID, cartID string) (*model.CartItem, error) {
 	sql := "select id,count,amount,cart_id from cart_item where book_id = ? and cart_id = ?" // sql
-	row := utils.Db.QueryRow(sql, bookID, cartID)                                            // 执行
-	cartItem := &model.CartItem{}                                                            // 创建cartItem
-	err := row.Scan(&cartItem.CartItemID, &cartItem.Count, &cartItem.Amount, &cartItem.CartID)
+	row := utils.Db.QueryRow(sql, itemID, cartID)                                            // Execute
+	cartItem := &model.CartItem{}                                                            // Create cart item
+	err := row.Scan(&cartItem.ID, &cartItem.Count, &cartItem.Amount, &cartItem.CartID)
 	if err != nil {
 		return nil, err
 	}
-	book, err := GetItemByID(bookID) // Query book information according to the id of the book
+	book, err := GetItemByID(itemID) // Query book information according to the id of the book
 	if err != nil {
 		return nil, err
 	}
@@ -32,7 +32,7 @@ func GetCartItemByBookIDAndCartID(bookID, cartID string) (*model.CartItem, error
 	return cartItem, nil
 }
 
-// GetCartItemsByCartID 根据购物车的ID获取对应的所有的购物项
+// GetCartItemsByCartID Get all the corresponding cart item according to the ID of the cart
 func GetCartItemsByCartID(cartID string) ([]*model.CartItem, error) {
 	sql := "select id,count,amount,book_id,cart_id from cart_item where cart_id = ?" // sql
 	rows, err := utils.Db.Query(sql, cartID)                                         // execute
@@ -43,7 +43,7 @@ func GetCartItemsByCartID(cartID string) ([]*model.CartItem, error) {
 	for rows.Next() {
 		var bookID string             // 设置一个变量接收bookId
 		cartItem := &model.CartItem{} // 创建cartItem
-		err2 := rows.Scan(&cartItem.CartItemID, &cartItem.Count, &cartItem.Amount, &bookID, &cartItem.CartID)
+		err2 := rows.Scan(&cartItem.ID, &cartItem.Count, &cartItem.Amount, &bookID, &cartItem.CartID)
 		if err2 != nil {
 			return nil, err2
 		}

@@ -1,19 +1,19 @@
 package model
 
-// Cart 购物车结构体
+// Cart Cart struct
 type Cart struct {
-	CartID      string      // 购物车ID
-	CartItems   []*CartItem // 购物车中的购物项
-	TotalCount  int64       // 购物车中图书的总数量，通过计算得到
-	TotalAmount float64     // 购物车中图书总金额，通过计算得到
-	UserID      int         // 当前购物车所属用户
+	CartID      string      // Cart ID
+	CartItems   []*CartItem // CartItems in the cart
+	TotalCount  int64       // The total quantity of items in the cart, obtained by calculation
+	TotalAmount float64     // The total amount of items in the cart, obtained by calculation
+	UserID      int         // User of current cart
 	UserName    string
 }
 
 // GetTotalCount Get the total count of the items
 func (cart *Cart) GetTotalCount() int64 {
 	var totalCount int64
-	for _, v := range cart.CartItems { // 遍历购物车中的购物项目slice
+	for _, v := range cart.CartItems { // Traverse the item slice in the cart
 		totalCount = totalCount + v.Count
 	}
 	return totalCount
@@ -22,7 +22,7 @@ func (cart *Cart) GetTotalCount() int64 {
 // GetTotalAmount Get the tatal amount of the items
 func (cart *Cart) GetTotalAmount() float64 {
 	var totalAmount float64
-	for _, v := range cart.CartItems { // 遍历购物车中的购物项目slice
+	for _, v := range cart.CartItems { // Traverse the item slice in the cart
 		totalAmount = totalAmount + v.GetAmount()
 	}
 	return totalAmount
