@@ -27,7 +27,7 @@
     </div>
 
     <div id="main">
-      <table>
+      <table align="center">
         <tr>
           <td>名称</td>
           <td>作者</td>
@@ -78,9 +78,9 @@
         {{end}} 到第<input value="{{.PageNo}}" name="pn" id="pn_input" />页
         <input type="button" value="确定" id="sub" />
         <script>
+          // Bind the click event to the OK button
           $("#sub").click(function () {
-            // 给确定按钮绑定单击事件
-            var pageNo = $("#pn_input").val(); // 获取输入的页码
+            var pageNo = $("#pn_input").val(); // Get the entered page number
             location = "/getPageBooks?pageNo=" + pageNo;
           });
         </script>

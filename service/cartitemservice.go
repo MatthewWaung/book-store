@@ -7,8 +7,9 @@ import (
 	"github.com/shuwenhe/shuwen-shop/model"
 )
 
-func GetCartItemByBookIDAndCartID(bookID, cartID string) (*model.CartItem, error) {
-	cartItem, err := dao.GetCartItemByBookIDAndCartID(bookID, cartID)
+// GetCartItemByBookIDAndCartID Get cart item by itemID and cartID
+func GetCartItemByBookIDAndCartID(itemID, cartID string) (*model.CartItem, error) {
+	cartItem, err := dao.GetCartItemByBookIDAndCartID(itemID, cartID)
 	fmt.Println("bookID-dao = ", cartItem)
 	if err != nil {
 		return nil, err
@@ -16,6 +17,7 @@ func GetCartItemByBookIDAndCartID(bookID, cartID string) (*model.CartItem, error
 	return cartItem, nil
 }
 
+// UpdateBookCount Update item count
 func UpdateBookCount(cartItem *model.CartItem) error {
 	err := dao.UpdateBookCount(cartItem)
 	if err != nil {
