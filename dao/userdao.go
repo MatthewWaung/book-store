@@ -1,6 +1,8 @@
 package dao
 
 import (
+	"time"
+
 	utils "github.com/shuwenhe/shuwen-shop/db"
 
 	"github.com/shuwenhe/shuwen-shop/model"
@@ -23,8 +25,9 @@ func CheckUserName(username string) (*model.User, error) {
 }
 
 func SaveUser(username, password, email string) error {
-	sql := "insert into users(username,password,email)values(?,?,?)"
-	_, err := utils.Db.Exec(sql, username, password, email)
+	sql := "insert into users(username,password,email,createtime)values(?,?,?,?)"
+	createtime := time.Now()
+	_, err := utils.Db.Exec(sql, username, password, email, createtime)
 	if err != nil {
 		return err
 	}
