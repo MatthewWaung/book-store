@@ -18,9 +18,9 @@ func Login(w http.ResponseWriter, r *http.Request) {
 		password := r.PostFormValue("password") // Get password
 		user, _ := service.CheckUserNameAndPassword(username, string(password))
 		if user.ID > 0 { // Username and password are correct
-			uuid := utils.CreateUUID()    // Generate UUID
+			uuid := utils.CreateUUID() // Generate UUID
 			session := &model.Session{ // Create a session
-			SessionID: uuid,
+				SessionID: uuid,
 				UserName:  user.Username,
 				UserID:    user.ID,
 			}
@@ -30,7 +30,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 				Value:    uuid,
 				HttpOnly: true,
 			}
-			http.SetCookie(w, &cookie)// Send cookie to browser
+			http.SetCookie(w, &cookie) // Send cookie to browser
 			t := template.Must(template.ParseFiles("views/pages/user/login_success.html"))
 			t.Execute(w, user)
 		} else {
@@ -74,8 +74,8 @@ func CheckUserName(w http.ResponseWriter, r *http.Request) {
 	username := r.PostFormValue("username")
 	user, _ := service.CheckUserName(username)
 	if user.ID > 0 {
-		w.Write([]byte("Username already exists！"))
+		w.Write([]byte("用户名已经存在！"))
 	} else {
-		w.Write([]byte("<font style = 'color:green'>Username does not exist！</font>"))
+		w.Write([]byte("<font style = 'color:green'>用户名不存在！</font>"))
 	}
 }

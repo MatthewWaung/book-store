@@ -22,7 +22,8 @@
           //验证是否符合规则
           var flag = usernameReg.test(username);
           if (!flag) {
-            alert("请输入3-16位的字母、数字、下划线或减号的用户名！");
+            /* alert("请输入3-16位的字母、数字、下划线或减号的用户名！"); */
+            alert("请输入11位手机号");
             return false;
           }
           //获取用户输入的密码
@@ -46,14 +47,14 @@
             alert("两次输入的密码不一致！");
             return false;
           }
-          //获取用户输入的邮箱
+          /* //获取用户输入的邮箱
           var email = $("#email").val();
           //设置验证邮箱的正则表达式
           var emailReg = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
           if (!emailReg.test(email)) {
             alert("邮箱格式不正确！");
             return false;
-          }
+          } */
         });
         $("#msg").hide();
         if ("{{.}}" == "用户名已存在") {
@@ -99,7 +100,7 @@
             <br />
             <div class="form">
               <form action="/regist" method="POST">
-                <label>用户名称：</label>
+                <label>手机：</label>
                 <input
                   class="itxt"
                   type="text"
@@ -111,7 +112,7 @@
                 />
                 <br />
                 <br />
-                <label>用户密码：</label>
+                <label>密码：</label>
                 <input
                   class="itxt"
                   type="password"
@@ -135,7 +136,7 @@
                 />
                 <br />
                 <br />
-                <label>电子邮件：</label>
+                <!--    <label>电子邮件：</label> 
                 <input
                   class="itxt"
                   type="text"
@@ -145,7 +146,7 @@
                   name="email"
                   id="email"
                 />
-                <br />
+                -->
                 <br />
                 <br />
                 <input type="submit" value="注册" id="sub_btn" />

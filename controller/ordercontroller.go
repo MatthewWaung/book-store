@@ -64,6 +64,7 @@ func GetOrderInfo(w http.ResponseWriter, r *http.Request) {
 	t.Execute(w, orderItems)
 }
 
+// GetOrderByUserID Get order by user id
 func GetOrderByUserID(w http.ResponseWriter, r *http.Request) {
 	_, session := service.IsLogin(r)
 	userID := session.UserID

@@ -8,26 +8,26 @@ import (
 	"github.com/shuwenhe/shuwen-shop/model"
 )
 
-func CheckUserNameAndPassword(username, password string) (*model.User, error) {
-	sql := "select id,username,password,email from user where username = ? and password = ?"
-	row := utils.Db.QueryRow(sql, username, password)
+func CheckUserNameAndPassword(phone, password string) (*model.User, error) {
+	sql := "select id,phone,password,email from user where phone = ? and password = ?"
+	row := utils.Db.QueryRow(sql, phone, password)
 	user := &model.User{}
 	row.Scan(&user.ID, &user.Username, &user.Password, &user.Email)
 	return user, nil
 }
 
-func CheckUserName(username string) (*model.User, error) {
-	sql := "select id,username,password,email from users where username = ?"
-	row := utils.Db.QueryRow(sql, username)
+func CheckUserName(phone string) (*model.User, error) {
+	sql := "select id,phone,password,email from user where phone = ?"
+	row := utils.Db.QueryRow(sql, phone)
 	user := &model.User{}
 	row.Scan(&user.ID, &user.Username, &user.Password, &user.Email)
 	return user, nil
 }
 
-func SaveUser(username, password, email string) error {
-	sql := "insert into users(username,password,email,createtime)values(?,?,?,?)"
+func SaveUser(phone, password, email string) error {
+	sql := "insert into user(phone,password,email,createtime)value(?,?,?,?)"
 	createtime := time.Now()
-	_, err := utils.Db.Exec(sql, username, password, email, createtime)
+	_, err := utils.Db.Exec(sql, phone, password, email, createtime)
 	if err != nil {
 		return err
 	}

@@ -73,23 +73,23 @@
         </tr>
         {{range .CartItems}}
         <tr>
-          <td>{{.Book.Title}}</td>
+          <td>{{.Item.Title}}</td>
           <td>
             <input
-              id="{{.CartItemID}}"
+              id="{{.ID}}"
               class="updateCartItem"
               type="text"
               value="{{.Count}}"
               style="text-align: center; width: 50px"
             />
           </td>
-          <td>{{.Book.Price}}</td>
+          <td>{{.Item.Price}}</td>
           <td>{{.Amount}}</td>
           <td>
             <a
-              id="{{.Book.Title}}"
+              id="{{.Item.Title}}"
               class="deleteCartItem"
-              href="/deleteCartItem?cartItemId={{.CartItemID}}"
+              href="/deleteCartItem?cartItemId={{.ID}}"
               >Delete</a
             >
           </td>
