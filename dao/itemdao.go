@@ -68,7 +68,8 @@ func GetPageItems(pageNo string) (*model.Page, error) {
 	var totalRecord int64                          // 总的记录数
 	row := utils.Db.QueryRow(sql)                  // 执行
 	row.Scan(&totalRecord)
-	var pageSize int64 = 4 // 每页显示4本书
+	// var pageSize int64 = 4 // 每页显示4本书
+	var pageSize int64 = 8 // 每页显示4本书
 	var totalPageNo int64  // 总页数
 	if totalRecord%pageSize == 0 {
 		totalPageNo = totalRecord / pageSize
