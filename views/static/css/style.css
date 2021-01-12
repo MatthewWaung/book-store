@@ -205,13 +205,14 @@ h1 {
 .tit h1 {
   float: left;
   margin-top: 5px;
+  color: #04be02;
 }
 
 .tit a {
   float: right;
   margin-left: 10px;
   margin-top: 10px;
-  color: red;
+  color: #04be02;
   text-decoration: none;
 }
 
@@ -271,5 +272,9 @@ td a {
 }
 
 #header div a {
-  color: blue;
+  color: #04be02;
+}
+
+label {
+  color: #04be02;
 }

@@ -76,6 +76,6 @@ func CheckUserName(w http.ResponseWriter, r *http.Request) {
 	if user.ID > 0 {
 		w.Write([]byte("用户名已经存在！"))
 	} else {
-		w.Write([]byte("<font style = 'color:green'>用户名不存在！</font>"))
+		w.Write([]byte("<font style = 'color:#04be02'>用户名不存在！</font>"))
 	}
 }
