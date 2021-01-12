@@ -10,7 +10,7 @@ import (
 // GetCartItemByBookIDAndCartID Get cart item by itemID and cartID
 func GetCartItemByBookIDAndCartID(itemID, cartID string) (*model.CartItem, error) {
 	cartItem, err := dao.GetCartItemByBookIDAndCartID(itemID, cartID)
-	fmt.Println("bookID-dao = ", cartItem)
+	fmt.Println("cartItem = ", cartItem)
 	if err != nil {
 		return nil, err
 	}
