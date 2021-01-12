@@ -7,27 +7,27 @@ import (
 	"github.com/spf13/viper"
 )
 
+// Run Run
 func Run() {
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("views/static"))))
 	http.Handle("/pages/", http.StripPrefix("/pages/", http.FileServer(http.Dir("views/pages"))))
-
 	User()
 	Item()
 	Cart()
 	CartItem()
 	Order()
 	Setup()
-
 	port := viper.GetString("server.port")
 	http.ListenAndServe(port, nil) // Listen and serve
 }
 
+// Setup Setup
 func Setup() {
 	http.HandleFunc("/addAddress", controller.AddAddress)
 	http.HandleFunc("/deleteAddressByID", controller.DeleteAddressByID)
 }
 
-// UserRouter User router
+// User User router
 func User() {
 	http.HandleFunc("/login", controller.Login)
 	http.HandleFunc("/logout", controller.Logout)
@@ -35,6 +35,7 @@ func User() {
 	http.HandleFunc("/checkUserName", controller.CheckUserName)
 }
 
+// Item router
 func Item() {
 	http.HandleFunc("/", controller.GetPageBooksByPrice)
 	http.HandleFunc("/getPageBooks", controller.GetPageBooks)
@@ -45,18 +46,19 @@ func Item() {
 	http.HandleFunc("/addBook2Cart", controller.AddBook2Cart)         // Add books to cart
 }
 
-// CartRouter Cart router
+// Cart Cart router
 func Cart() {
 	http.HandleFunc("/getCartInfo", controller.GetCartInfo) // Get cart information
 	http.HandleFunc("/deleteCart", controller.DeleteCart)
 }
 
-// CartItemRouter Cart item router
+// CartItem Cart item router
 func CartItem() {
 	http.HandleFunc("/deleteCartItem", controller.DeleteCartItem)
 	http.HandleFunc("/updateCartItem", controller.UpdateCartItem) // updateCartItem
 }
 
+// Order Order router
 func Order() {
 	http.HandleFunc("/checkout", controller.Checkout)
 	http.HandleFunc("/getOrders", controller.GetOrders)       // Get all orders
