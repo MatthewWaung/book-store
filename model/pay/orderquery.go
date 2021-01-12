@@ -6,8 +6,9 @@ import (
 
 // OrderQueryResponse OrderQueryResponse struct
 type OrderQueryResponse struct {
-	TrandeState        string    // Trading status
 	OpenID             string    // The unique identifier of the user under the merchant appid
+	ProductID          string    // Order ID
+	TrandeState        string    // Trading status
 	TransactionID      string    // WeChat Pay order number
 	OutTradeNo         string    // Merchant system order number
 	TradeType          string    // Transaction type submitted by calling the interface: NATIVE
@@ -17,5 +18,6 @@ type OrderQueryResponse struct {
 	TimeEnd            time.Time // Order payment time
 	DeviceInfo         string    // Terminal device number assigned by WeChat Pay
 	SettlementTotalFee int64     // Settlement total fee = Total order amount - Non-rechargeable vouchers
-	FeeType            string    //  Currency type：CNY
+	FeeType            string    // Currency type：CNY
+	Detail             string    // Product details
 }
