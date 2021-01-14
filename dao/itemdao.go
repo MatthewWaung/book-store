@@ -17,8 +17,8 @@ func AddItem(b *model.Item) error {
 	return nil
 }
 
-// GetBooks 获取商品
-func GetBooks() ([]*model.Item, error) {
+// GetItems 获取商品
+func GetItems() ([]*model.Item, error) {
 	sql := "select id,title,author,price,sales,stock,img_path from item"
 	rows, err := utils.Db.Query(sql)
 	if err != nil {

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>书文 正品价低、保障品质、及时配送、购物自由！</title>
+
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css" />
+    <script src="/static/script/jquery-1.7.2.js"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <img class="logo_img" alt="" src="/static/img/logo.gif" />
+      <span class="wel_word">书文</span>
+
+      <div>
+        <span>填写</span>
+        <a href="/addAddress">收货地址</a>&nbsp;&nbsp;
+        <a href="/getCartInfo">购物车</a>
+        <a href="/getOrderByUserID">我的订单</a>
+        <a href="/logout">注销</a>&nbsp;&nbsp;
+        <a href="/">返回</a>
+      </div>
+    </div>
+
+    <div id="main">
+      <div class="main_con clearfix">
+        <div class="right_content clearfix">
+          <h3 class="common_title2">编辑地址</h3>
+          <div class="site_con">
+            <form method="post" action="/addAddress">
+              <div class="form_group">
+                <label>收货人：</label>
+                <input type="text" name="receiver" />
+              </div>
+
+              <div class="form_group form_group2">
+                <label>所在地区：</label>
+                <textarea class="site_area" name="area"></textarea>
+              </div>
+
+              <div class="form_group form_group2">
+                <label>详细地址：</label>
+                <textarea class="site_area" name="address"></textarea>
+              </div>
+
+              <div class="form_group">
+                <label>手机：</label>
+                <input type="text" name="phone" />
+              </div>
+
+              <input type="submit" name="" value="提交" class="info_submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <table align="center">
+        <tr>
+          <td>收货人</td>
+          <td>所在地区</td>
+          <td>详细地区</td>
+          <td>手机</td>
+        </tr>
+        {{range .}}
+      </table>
+    </div>
+
+    <div id="bottom">
+      <span> Copyright © 2007-2020 书文 版权所有 </span>
+      <span> 京ICP备15025412号-2 京ICP备15025412-4号 </span>
+      <span> 24小时客服电话微信15010729356 </span>
+    </div>
+  </body>
+</html>

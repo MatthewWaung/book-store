@@ -26,6 +26,7 @@ func Run() {
 // Setup Setup
 func Setup() {
 	http.HandleFunc("/addAddress", controller.AddAddress)
+	http.HandleFunc("/getAddress", controller.GetAddress)
 	http.HandleFunc("/deleteAddressByID", controller.DeleteAddressByID)
 }
 

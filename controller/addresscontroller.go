@@ -21,8 +21,15 @@ func AddAddress(w http.ResponseWriter, r *http.Request) {
 		Phone:    phone,
 	}
 	service.AddAddress(addresses)
-	t := template.Must(template.ParseFiles("views/pages/user/user_address.html"))
+	t := template.Must(template.ParseFiles("views/pages/user/address.html"))
 	t.Execute(w, addresses)
+}
+
+// GetAddress Get address
+func GetAddress(w http.ResponseWriter, r *http.Request) {
+	result := service.GetAddress()
+	t := template.Must(template.ParseFiles("views/pages/user/address.html"))
+	t.Execute(w, result)
 }
 
 // DeleteAddressByID Delete address by ID

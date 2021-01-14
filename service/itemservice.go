@@ -57,9 +57,10 @@ func InstockItemByID(id int) *common.Result {
 	return result
 }
 
+// GetItems Get items
 func GetItems() *common.Result {
 	result := &common.Result{}
-	items, _ := dao.GetBooks()
+	items, _ := dao.GetItems()
 	result.Data = items
 	result.Msg = "Get items success!"
 	return result

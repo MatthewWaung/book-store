@@ -26,7 +26,7 @@ func CheckUserName(phone string) (*model.User, error) {
 
 // SaveUser Save user
 func SaveUser(phone, password string) error {
-	sql := "insert into user(phone,password,createtime)value(?,?,?,?)"
+	sql := "insert into user(phone,password,createtime)value(?,?,?)"
 	createtime := time.Now()
 	_, err := utils.Db.Exec(sql, phone, password, createtime)
 	if err != nil {

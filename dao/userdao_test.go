@@ -16,7 +16,7 @@ func testCheckUserName(t *testing.T) {
 }
 
 func testSaveUser(t *testing.T) {
-	err := SaveUser("admin4", "123456", "admin4@qq.com")
+	err := SaveUser("admin4", "123456")
 	if err != nil {
 		err.Error()
 	}
