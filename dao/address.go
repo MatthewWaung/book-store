@@ -1,6 +1,8 @@
 package dao
 
 import (
+	"fmt"
+
 	utils "github.com/shuwenhe/shuwen-shop/db"
 	"github.com/shuwenhe/shuwen-shop/model"
 )
@@ -28,6 +30,7 @@ func GetAddress() ([]*model.Address, error) {
 		rows.Scan(&address.ID, &address.Receiver, &address.Area, &address.Address, &address.Phone)
 		addresses = append(addresses, address)
 	}
+	fmt.Println("addresses = ", addresses)
 	return addresses, nil
 }
 

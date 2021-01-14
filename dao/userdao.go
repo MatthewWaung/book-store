@@ -12,7 +12,7 @@ func CheckUserNameAndPassword(phone, password string) (*model.User, error) {
 	sql := "select id,phone,password,email from user where phone = ? and password = ?"
 	row := utils.Db.QueryRow(sql, phone, password)
 	user := &model.User{}
-	row.Scan(&user.ID, &user.Username, &user.Password, &user.Email)
+	row.Scan(&user.ID, &user.Username, &user.Password)
 	return user, nil
 }
 
@@ -20,7 +20,7 @@ func CheckUserName(phone string) (*model.User, error) {
 	sql := "select id,phone,password,email from user where phone = ?"
 	row := utils.Db.QueryRow(sql, phone)
 	user := &model.User{}
-	row.Scan(&user.ID, &user.Username, &user.Password, &user.Email)
+	row.Scan(&user.ID, &user.Username, &user.Password)
 	return user, nil
 }
 
