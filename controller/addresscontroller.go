@@ -1,28 +1,24 @@
 package controller
 
-import(
-	"fmt"
-	"strconv"
+import (
 	"net/http"
+	"strconv"
 	"text/template"
+
 	"github.com/shuwenhe/shuwen-shop/model"
 	"github.com/shuwenhe/shuwen-shop/service"
 )
 
-func AddAddress(w http.ResponseWriter,r *http.Request)  {
-	receiver :=  r.PostFormValue("receiver")
-	area :=  r.PostFormValue("area")
-	address :=  r.PostFormValue("address")
-	phone :=  r.PostFormValue("phone")
-	fmt.Println("receiver",receiver)
-	fmt.Println("addr",area)
-	fmt.Println("addr",address)
-	fmt.Println("phone",phone)
+func AddAddress(w http.ResponseWriter, r *http.Request) {
+	receiver := r.PostFormValue("receiver")
+	area := r.PostFormValue("area")
+	address := r.PostFormValue("address")
+	phone := r.PostFormValue("phone")
 	addresses := &model.Address{
-		Receiver:receiver,
-		Area:area,
-		Address:address,
-		Phone:phone,
+		Receiver: receiver,
+		Area:     area,
+		Address:  address,
+		Phone:    phone,
 	}
 	service.AddAddress(addresses)
 	t := template.Must(template.ParseFiles("views/pages/user/user_address.html"))
@@ -30,7 +26,7 @@ func AddAddress(w http.ResponseWriter,r *http.Request)  {
 }
 
 // DeleteAddressByID Delete address by ID
-func DeleteAddressByID(w http.ResponseWriter,r *http.Request) {
-	ID,_ := strconv.Atoi(r.PostFormValue("ID")) 
+func DeleteAddressByID(w http.ResponseWriter, r *http.Request) {
+	ID, _ := strconv.Atoi(r.PostFormValue("ID"))
 	service.DeleteAddressByID(ID)
 }

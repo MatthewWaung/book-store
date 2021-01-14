@@ -25,10 +25,10 @@ func testUpdateBookCount(t *testing.T) {
 	UpdateBookCount(cartItem) // Update the number of books in the cartItem according to the id of the book, the id of the cart and the number of books
 }
 
-func TestDeleteCartItemByCartID(t *testing.T) {
+func testDeleteCartItemByCartID(t *testing.T) {
 	DeleteCartItemByCartID("4f702f4e-eff8-40ce-5886-dc443b816a94")
 }
 
-func TestDeleteCartItemByID(t *testing.T) {
+func testDeleteCartItemByID(t *testing.T) {
 	DeleteCartItemByID("40")
 }

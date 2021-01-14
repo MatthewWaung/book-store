@@ -10,7 +10,7 @@ import (
 
 // AddSession 添加session到数据库
 func AddSession(session *model.Session) error {
-	sql := "insert into sessions values(?,?,?)"                                          // sql
+	sql := "insert into session values(?,?,?)"                                           // sql
 	_, err := utils.Db.Exec(sql, &session.SessionID, &session.UserName, &session.UserID) // 执行
 	if err != nil {
 		return err
@@ -20,8 +20,8 @@ func AddSession(session *model.Session) error {
 
 // DeleteSession 删除数据库中的session
 func DeleteSession(sessionID string) error {
-	sql := "delete from sessions where session_id = ?" // sql语句
-	_, err := utils.Db.Exec(sql, sessionID)            // 执行
+	sql := "delete from session where session_id = ?" // sql语句
+	_, err := utils.Db.Exec(sql, sessionID)           // 执行
 	if err != nil {
 		return err
 	}
@@ -30,8 +30,8 @@ func DeleteSession(sessionID string) error {
 
 // GetSession 根据session的Id到数据库中查询session
 func GetSession(sessID string) (*model.Session, error) {
-	sql := "select session_id,username,user_id from sessions where session_id = ?" // sql语句
-	Stmt, err := utils.Db.Prepare(sql)                                             // 预编译
+	sql := "select session_id,username,user_id from session where session_id = ?" // sql语句
+	Stmt, err := utils.Db.Prepare(sql)                                            // 预编译
 	if err != nil {
 		return nil, err
 	}

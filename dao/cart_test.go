@@ -8,25 +8,25 @@ import (
 )
 
 func testAddCart(t *testing.T) {
-	book := &model.Book{ // 设置购买的第1本图书
+	book := &model.Item{ // 设置购买的第1本图书
 		ID:    1,
 		Price: 27.20,
 	}
 
-	book2 := &model.Book{ // 设置购买的第2本图书
+	book2 := &model.Item{ // 设置购买的第2本图书
 		ID:    2,
 		Price: 23.00,
 	}
 
 	var cartItems []*model.CartItem // create cartItem slice
 	cartItem := &model.CartItem{    // 创建第1个购物项
-		Book:   book,
+		Item:   book,
 		Count:  10,
 		CartID: "123456",
 	}
 	cartItems = append(cartItems, cartItem) // cartItem append to cartItems slice
 	cartItem2 := &model.CartItem{           // 创建第2个购物项
-		Book:   book2,
+		Item:   book2,
 		Count:  10,
 		CartID: "123456",
 	}

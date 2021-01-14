@@ -15,8 +15,9 @@ func CheckUserNameAndPassword(username, password string) (*model.User, error) {
 	return user, nil
 }
 
-func CheckUserName(username string) (*model.User, error) {
-	user, err := dao.CheckUserName(username)
+// CheckUserName Check user name
+func CheckUserName(phone string) (*model.User, error) {
+	user, err := dao.CheckUserName(phone)
 	if err != nil {
 		return nil, err
 	}
@@ -36,8 +37,9 @@ func DeleteSession(sessionID string) error {
 	return nil
 }
 
-func SaveUser(username, password, email string) error {
-	err := dao.SaveUser(username, password, email)
+// SaveUser Save user
+func SaveUser(phone, password string) error {
+	err := dao.SaveUser(phone, password)
 	if err != nil {
 		return err
 	}

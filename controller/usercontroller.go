@@ -52,18 +52,16 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 	GetPageBooksByPrice(w, r) // Go to homepage
 }
 
+// Regist Regist user
 func Regist(w http.ResponseWriter, r *http.Request) {
-	username := r.PostFormValue("username")
+	phone := r.PostFormValue("username")
 	password := r.PostFormValue("password")
-	email := r.PostFormValue("email")
-	// TODO Password encryption
-	// hasedPassword, _ := bcrypt.GenerateFromPassword([]byte(password), bcrypt.DefaultCost) // Encrypt the user's password when creating a user
-	user, _ := service.CheckUserName(username)
+	user, _ := service.CheckUserName(phone)
 	if user.ID > 0 {
 		t := template.Must(template.ParseFiles("views/pages/user/regist.html"))
 		t.Execute(w, "Username already exists")
 	} else {
-		service.SaveUser(username, password, email)
+		service.SaveUser(phone, password)
 		t := template.Must(template.ParseFiles("views/pages/user/regist_success.html"))
 		t.Execute(w, "Incorrect username or password")
 	}

@@ -32,8 +32,6 @@ func GetCartItemByBookIDAndCartID(itemID, cartID string) (*model.CartItem, error
 		return nil, err
 	}
 	cartItem.Item = book // Set the book to the cartItem
-	fmt.Println("book=", book)
-	fmt.Println("cartItem=", cartItem)
 	return cartItem, nil
 }
 

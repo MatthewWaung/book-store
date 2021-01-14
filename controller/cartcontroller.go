@@ -1,7 +1,6 @@
 package controller
 
 import (
-	"fmt"
 	"net/http"
 	"text/template"
 
@@ -66,8 +65,7 @@ func GetCartInfo(w http.ResponseWriter, r *http.Request) {
 	_, session := service.IsLogin(r) // Determine whether you have logged in
 	userID := session.UserID
 	cart, _ := service.GetCartByUserID(userID) // Get the corresponding cart from the database according to the user's id
-	fmt.Println("cart = ", cart)
-	if cart != nil { // Determine whether the shopping cart is empty
+	if cart != nil {                           // Determine whether the shopping cart is empty
 		cart.UserName = session.UserName
 		t := template.Must(template.ParseFiles("views/pages/cart/cart.html")) // Parse the template file
 		t.Execute(w, cart)                                                    // execute
