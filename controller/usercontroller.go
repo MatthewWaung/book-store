@@ -21,7 +21,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 			uuid := utils.CreateUUID() // Generate UUID
 			session := &model.Session{ // Create a session
 				SessionID: uuid,
-				UserName:  user.Username,
+				Phone:     user.Phone,
 				UserID:    user.ID,
 			}
 			service.AddSession(session) // Write the session to the database, there is an identification in the database

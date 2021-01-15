@@ -10,8 +10,8 @@ import (
 
 // AddSession 添加session到数据库
 func AddSession(session *model.Session) error {
-	sql := "insert into session values(?,?,?)"                                           // sql
-	_, err := utils.Db.Exec(sql, &session.SessionID, &session.UserName, &session.UserID) // 执行
+	sql := "insert into session values(?,?,?)"                                        // sql
+	_, err := utils.Db.Exec(sql, &session.SessionID, &session.Phone, &session.UserID) // 执行
 	if err != nil {
 		return err
 	}
@@ -29,19 +29,19 @@ func DeleteSession(sessionID string) error {
 }
 
 // GetSession 根据session的Id到数据库中查询session
-func GetSession(sessID string) (*model.Session, error) {
-	sql := "select session_id,username,user_id from session where session_id = ?" // sql语句
-	Stmt, err := utils.Db.Prepare(sql)                                            // 预编译
+func GetSession(sessionID string) (*model.Session, error) {
+	sql := "select session_id,phone,user_id from session where session_id = ?" // sql语句
+	Stmt, err := utils.Db.Prepare(sql)                                         // 预编译
 	if err != nil {
 		return nil, err
 	}
-	row := Stmt.QueryRow(sessID) // 执行
-	sess := &model.Session{}
-	row.Scan(&sess.SessionID, &sess.UserName, &sess.UserID) // 扫描数据库中的字段值为session的字段赋值
-	return sess, nil
+	row := Stmt.QueryRow(sessionID) // 执行
+	session := &model.Session{}
+	row.Scan(&session.SessionID, &session.Phone, &session.UserID) // 扫描数据库中的字段值为session的字段赋值
+	return session, nil
 }
 
-// IsLogin 判断用户是否已经登录 false 没有登录，true 已经登录
+// IsLogin judges whether the user is logged in false is not logged in, true is logged in
 func IsLogin(r *http.Request) (bool, *model.Session) {
 	cookie, _ := r.Cookie("user") // 根据Cookie的name判断获取Cookie
 	if cookie != nil {

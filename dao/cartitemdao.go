@@ -1,8 +1,6 @@
 package dao
 
 import (
-	"fmt"
-
 	utils "github.com/shuwenhe/shuwen-shop/db"
 	"github.com/shuwenhe/shuwen-shop/model"
 )
@@ -27,7 +25,6 @@ func GetCartItemByBookIDAndCartID(itemID, cartID string) (*model.CartItem, error
 		return nil, err
 	}
 	book, err := GetItemByID(itemID) // Query book information according to the id of the book
-	fmt.Println("book = ", book)
 	if err != nil {
 		return nil, err
 	}

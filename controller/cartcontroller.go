@@ -66,7 +66,7 @@ func GetCartInfo(w http.ResponseWriter, r *http.Request) {
 	userID := session.UserID
 	cart, _ := service.GetCartByUserID(userID) // Get the corresponding cart from the database according to the user's id
 	if cart != nil {                           // Determine whether the shopping cart is empty
-		cart.UserName = session.UserName
+		cart.UserName = session.Phone
 		t := template.Must(template.ParseFiles("views/pages/cart/cart.html")) // Parse the template file
 		t.Execute(w, cart)                                                    // execute
 	} else { // The user does not have a cart

@@ -93,10 +93,10 @@ func GetPageBooksByPrice(w http.ResponseWriter, r *http.Request) {
 	flag, session := service.IsLogin(r) // Call IsLogin to determine whether the user has logged in
 	if flag {
 		page.IsLogin = true // The user has logged in, set the IsLogin field and Username field values in the page
-		page.Username = session.UserName
+		page.Username = session.Phone
 	}
 	t := template.Must(template.ParseFiles("views/index.html")) // Parse the template
-	t.Execute(w, page)                                          
+	t.Execute(w, page)
 }
 
 // Indexhandler Get homepage

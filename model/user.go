@@ -2,6 +2,6 @@ package model
 
 type User struct {
 	ID       int
-	Username string
+	Phone    string
 	Password string
 }
