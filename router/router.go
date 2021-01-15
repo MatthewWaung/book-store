@@ -45,7 +45,7 @@ func Item() {
 	http.HandleFunc("/getPageBooksByPrice", controller.GetPageBooksByPrice)
 	http.HandleFunc("/deleteBook", controller.DeleteBook)
 	http.HandleFunc("/toUpdateBookPage", controller.ToUpdateBookPage) // Go to the page to update the book
-	http.HandleFunc("/updateOraddBook", controller.UpdateOrAddBook)   // Update or add books
+	http.HandleFunc("/updateOrAddBook", controller.UpdateOrAddBook)   // Update or add books
 	http.HandleFunc("/addBook2Cart", controller.AddBook2Cart)         // Add books to cart
 }
 
