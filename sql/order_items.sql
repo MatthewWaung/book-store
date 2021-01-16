@@ -1,17 +1,17 @@
 /*
- Navicat MySQL Data Transfer
+ Navicat Premium Data Transfer
 
- Source Server         : bookstore
+ Source Server         : shuwenshop
  Source Server Type    : MySQL
  Source Server Version : 50647
  Source Host           : 62.234.11.179:3306
- Source Schema         : bookstore
+ Source Schema         : shuwenshop
 
  Target Server Type    : MySQL
  Target Server Version : 50647
  File Encoding         : 65001
 
- Date: 11/11/2020 05:39:10
+ Date: 16/01/2021 18:47:24
 */
 
 SET NAMES utf8mb4;
@@ -32,7 +32,7 @@ CREATE TABLE `order_items` (
   `order_id` varchar(100) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `order_id` (`order_id`),
-  CONSTRAINT `order_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=utf8;
+  CONSTRAINT `order_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `order` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=291 DEFAULT CHARSET=utf8;
 
 SET FOREIGN_KEY_CHECKS = 1;

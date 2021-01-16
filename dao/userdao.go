@@ -17,7 +17,7 @@ func CheckUserNameAndPassword(phone, password string) (*model.User, error) {
 }
 
 func CheckUserName(phone string) (*model.User, error) {
-	sql := "select id,phone,password,email from user where phone = ?"
+	sql := "select id,phone,password from user where phone = ?"
 	row := utils.Db.QueryRow(sql, phone)
 	user := &model.User{}
 	row.Scan(&user.ID, &user.Phone, &user.Password)

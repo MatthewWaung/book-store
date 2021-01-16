@@ -7,7 +7,7 @@ type Cart struct {
 	TotalCount  int64       // The total quantity of items in the cart, obtained by calculation
 	TotalAmount float64     // The total amount of items in the cart, obtained by calculation
 	UserID      int         // User of current cart
-	UserName    string
+	Phone       string
 }
 
 // GetTotalCount Get the total count of the items

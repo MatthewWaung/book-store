@@ -11,7 +11,7 @@ import (
 
 func GetItems(w http.ResponseWriter, r *http.Request) {
 	result := service.GetItems()
-	t := template.Must(template.ParseFiles("views/pages/manager/book_manager.html"))
+	t := template.Must(template.ParseFiles("views/pages/manager/item_manager.html"))
 	t.Execute(w, result)
 }
 
@@ -26,10 +26,10 @@ func ToUpdateBookPage(w http.ResponseWriter, r *http.Request) {
 	bookID := r.FormValue("bookId")        // Get the id of the book to be updated
 	book, _ := service.GetItemByID(bookID) // Call the function of getting books in bookdao
 	if book.ID > 0 {
-		t := template.Must(template.ParseFiles("views/pages/manager/book_edit.html")) // Parse the template
+		t := template.Must(template.ParseFiles("views/pages/manager/item_edit.html")) // Parse the template
 		t.Execute(w, book)                                                            // Execute
 	} else {
-		t := template.Must(template.ParseFiles("views/pages/manager/book_edit.html")) // 解析模板
+		t := template.Must(template.ParseFiles("views/pages/manager/item_edit.html")) // 解析模板
 		t.Execute(w, "")                                                              // 执行
 	}
 }
@@ -70,7 +70,7 @@ func GetPageBooks(w http.ResponseWriter, r *http.Request) {
 		pageNo = "1"
 	}
 	page, _ := service.GetPageItems(pageNo)
-	t := template.Must(template.ParseFiles("views/pages/manager/book_manager.html"))
+	t := template.Must(template.ParseFiles("views/pages/manager/item_manager.html"))
 	t.Execute(w, page)
 }
 

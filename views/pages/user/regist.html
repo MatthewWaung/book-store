@@ -16,12 +16,13 @@
         //给注册按钮绑定单击事件
         $("#sub_btn").click(function () {
           //获取用户输入的用户名
-          var phone = $("#phone").val();
+          var username = $("#username").val();
           //设置验证用户名的正则表达式
           var usernameReg = /^[a-zA-Z0-9_-]{3,16}$/;
           //验证是否符合规则
-          var flag = usernameReg.test(phone);
+          var flag = usernameReg.test(username);
           if (!flag) {
+            /* alert("请输入3-16位的字母、数字、下划线或减号的用户名！"); */
             alert("请输入11位手机号");
             return false;
           }
@@ -57,18 +58,15 @@
           var phone = $(this).val(); // 获取用户输入的用户名
           var url = "/checkUserName"; // 设置请求的url地址
           var param = { phone: phone }; // 设置请求参数
+          // 发送Ajax请求
           $.post(url, param, function (res) {
-            // 发送Ajax请求
-            // 将显示提示信息的span元素显示出来
-            $("#msg").show();
-            // 将响应信息设置到span元素中
-            $("#msg").html(res);
+            $("#msg").show(); // 将显示提示信息的span元素显示出来
+            $("#msg").html(res); // 将响应信息设置到span元素中
           });
         });
       });
     </script>
   </head>
-
   <body>
     <div id="login_header">
       <img class="logo_img" alt="" src="/static/img/logo.gif" />
@@ -78,6 +76,7 @@
       <div id="l_content">
         <span class="login_word">欢迎注册</span>
       </div>
+
       <div id="content">
         <div class="login_form">
           <div class="login_box">
@@ -124,6 +123,17 @@
                 />
                 <br />
                 <br />
+                <!--    <label>电子邮件：</label> 
+                <input
+                  class="itxt"
+                  type="text"
+                  placeholder="请输入邮箱地址"
+                  autocomplete="off"
+                  tabindex="1"
+                  name="email"
+                  id="email"
+                />
+                -->
                 <br />
                 <br />
                 <input type="submit" value="注册" id="sub_btn" />

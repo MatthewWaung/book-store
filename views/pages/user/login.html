@@ -12,9 +12,9 @@
       $(function () {
         //给登录按钮绑定单击事件
         $("#sub_btn").click(function () {
-          var username = $("#username").val();
+          var phone = $("#phone").val();
           //判断用户名是否为空
-          if (username == "") {
+          if (phone == "") {
             alert("用户名不能为空！");
             //取消默认行为
             return false;
@@ -59,10 +59,10 @@
                 <input
                   class="itxt"
                   type="text"
-                  placeholder="请输入用户名"
+                  placeholder="请输入手机号"
                   autocomplete="off"
                   tabindex="1"
-                  name="username"
+                  name="phone"
                 />
                 <br />
                 <br />

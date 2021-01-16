@@ -1,7 +1,6 @@
 package controller
 
 import (
-	"fmt"
 	"net/http"
 	"text/template"
 
@@ -15,9 +14,9 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	if flag {
 		GetPageBooksByPrice(w, r) // Go to homepage
 	} else {
-		username := r.PostFormValue("username") // Get username
+		phone := r.PostFormValue("phone")       // Get username
 		password := r.PostFormValue("password") // Get password
-		user, _ := service.CheckUserNameAndPassword(username, string(password))
+		user, _ := service.CheckUserNameAndPassword(phone, string(password))
 		if user.ID > 0 { // Username and password are correct
 			uuid := utils.CreateUUID() // Generate UUID
 			session := &model.Session{ // Create a session
@@ -56,7 +55,6 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 // Regist Regist user
 func Regist(w http.ResponseWriter, r *http.Request) {
 	phone := r.PostFormValue("phone")
-	fmt.Println("phone = ", phone)
 	password := r.PostFormValue("password")
 	user, _ := service.CheckUserName(phone)
 	if user.ID > 0 {
@@ -71,8 +69,8 @@ func Regist(w http.ResponseWriter, r *http.Request) {
 
 // CheckUserName Verify that the username exists by sending an Ajax request
 func CheckUserName(w http.ResponseWriter, r *http.Request) {
-	username := r.PostFormValue("username")
-	user, _ := service.CheckUserName(username)
+	phone := r.PostFormValue("phone")
+	user, _ := service.CheckUserName(phone)
 	if user.ID > 0 {
 		w.Write([]byte("用户名已经存在！"))
 	} else {
