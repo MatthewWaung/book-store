@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-// CreateUUID 生成UUID
+// CreateUUID Create UUID
 func CreateUUID() (uuid string) {
 	u := new([16]byte)
 	_, err := rand.Read(u[:])

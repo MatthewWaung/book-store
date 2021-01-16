@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"fmt"
 	"net/http"
 	"text/template"
 
@@ -55,6 +56,7 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 // Regist Regist user
 func Regist(w http.ResponseWriter, r *http.Request) {
 	phone := r.PostFormValue("phone")
+	fmt.Println("phone = ", phone)
 	password := r.PostFormValue("password")
 	user, _ := service.CheckUserName(phone)
 	if user.ID > 0 {
