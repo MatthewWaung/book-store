@@ -1,7 +1,6 @@
 package controller
 
 import (
-	"fmt"
 	"net/http"
 	"text/template"
 	"time"
@@ -17,7 +16,6 @@ func Checkout(w http.ResponseWriter, r *http.Request) {
 	_, session := service.IsLogin(r) // Get the session
 	userID := session.UserID
 	cart, _ := service.GetCartByUserID(userID)
-	fmt.Println("cart = ", cart)
 	orderID := utils.CreateUUID() // Generate order number
 	timeStr := time.Now().Format("2006-01-02 15:04:05")
 	order := &model.Order{ // Create order

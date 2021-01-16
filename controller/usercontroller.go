@@ -54,7 +54,7 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 
 // Regist Regist user
 func Regist(w http.ResponseWriter, r *http.Request) {
-	phone := r.PostFormValue("username")
+	phone := r.PostFormValue("phone")
 	password := r.PostFormValue("password")
 	user, _ := service.CheckUserName(phone)
 	if user.ID > 0 {
