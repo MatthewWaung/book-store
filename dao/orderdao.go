@@ -1,6 +1,8 @@
 package dao
 
 import (
+	"fmt"
+
 	utils "github.com/shuwenhe/shuwen-shop/db"
 
 	"github.com/shuwenhe/shuwen-shop/model"
@@ -8,6 +10,7 @@ import (
 
 // AddOrder add order
 func AddOrder(order *model.Order) error {
+	fmt.Println("order = ", order)
 	sql := "insert into orders(id,total_count,total_amount,state,user_id,create_time) values(?,?,?,?,?,?)"
 	_, err := utils.Db.Exec(sql, &order.OrderID, &order.TotalCount, &order.TotalAmount, &order.State, &order.UserID, &order.CreateTime)
 	if err != nil {
