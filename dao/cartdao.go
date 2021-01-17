@@ -8,7 +8,7 @@ import (
 
 // AddCart Insert cart item into cart table
 func AddCart(cart *model.Cart) error {
-	sql := "insert into cart(id,total_count,total_amount,user_id) values(?,?,?,?)"                      // ID is not an auto-incrementing primary key
+	sql := "insert into cart(id,total_count,total_amount,user_id) values(?,?,?,?,?)"                    // ID is not an auto-incrementing primary key
 	_, err := utils.Db.Exec(sql, cart.CartID, cart.GetTotalCount(), cart.GetTotalAmount(), cart.UserID) // Execute
 	if err != nil {
 		return err

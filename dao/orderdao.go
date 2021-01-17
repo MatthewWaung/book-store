@@ -8,8 +8,8 @@ import (
 
 // AddOrder add order
 func AddOrder(order *model.Order) error {
-	sql := "insert into orders(id,create_time,total_count,total_amount,state,user_id) values(?,?,?,?,?,?)"
-	_, err := utils.Db.Exec(sql, &order.OrderID, &order.CreateTime, &order.TotalCount, &order.TotalAmount, &order.State, &order.UserID)
+	sql := "insert into orders(id,total_count,total_amount,state,user_id,create_time) values(?,?,?,?,?,?)"
+	_, err := utils.Db.Exec(sql, &order.OrderID, &order.TotalCount, &order.TotalAmount, &order.State, &order.UserID, &order.CreateTime)
 	if err != nil {
 		return err
 	}

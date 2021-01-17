@@ -1,7 +1,6 @@
 package controller
 
 import (
-	"fmt"
 	"net/http"
 	"text/template"
 	"time"
@@ -70,7 +69,6 @@ func GetOrderByUserID(w http.ResponseWriter, r *http.Request) {
 	_, session := service.IsLogin(r)
 	userID := session.UserID
 	orders, _ := service.GetOrderByUserID(userID)
-	fmt.Println("orders = ", orders)
 	session.Orders = orders
 	t := template.Must(template.ParseFiles("views/pages/order/order.html"))
 	t.Execute(w, session)
