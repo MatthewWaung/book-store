@@ -11,27 +11,26 @@
  Target Server Version : 50647
  File Encoding         : 65001
 
- Date: 16/01/2021 18:47:14
+ Date: 17/01/2021 11:19:23
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
--- Table structure for order
+-- Table structure for orders
 -- ----------------------------
-DROP TABLE IF EXISTS `order`;
-CREATE TABLE `order` (
+DROP TABLE IF EXISTS `orders`;
+CREATE TABLE `orders` (
   `id` varchar(100) NOT NULL,
-  `create_time` varchar(100) NOT NULL COMMENT '购买时间',
-  `total_count` int(11) NOT NULL COMMENT '总数量',
+  `create_time` datetime NOT NULL,
+  `total_count` int(11) NOT NULL,
   `total_amount` double(11,2) NOT NULL,
-  `state` int(11) DEFAULT NULL,
-  `user_id` int(11) DEFAULT NULL COMMENT '快递信息快递表',
+  `state` int(11) NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `user_id` (`state`,`user_id`),
-  KEY `post_id_idx` (`user_id`),
-  CONSTRAINT `post_id` FOREIGN KEY (`user_id`) REFERENCES `address` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 SET FOREIGN_KEY_CHECKS = 1;

@@ -11,7 +11,7 @@
  Target Server Version : 50647
  File Encoding         : 65001
 
- Date: 16/01/2021 18:47:24
+ Date: 17/01/2021 11:19:35
 */
 
 SET NAMES utf8mb4;
@@ -23,7 +23,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS `order_items`;
 CREATE TABLE `order_items` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `count` int(11) NOT NULL,
+  `COUNT` int(11) NOT NULL,
   `amount` double(11,2) NOT NULL,
   `title` varchar(100) NOT NULL,
   `author` varchar(100) NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE `order_items` (
   `order_id` varchar(100) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `order_id` (`order_id`),
-  CONSTRAINT `order_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `order` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=291 DEFAULT CHARSET=utf8;
+  CONSTRAINT `order_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 SET FOREIGN_KEY_CHECKS = 1;
