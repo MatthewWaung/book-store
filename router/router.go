@@ -23,13 +23,6 @@ func Run() {
 	http.ListenAndServe(port, nil) // Listen and serve
 }
 
-// Setup Setup
-func Setup() {
-	http.HandleFunc("/addAddress", controller.AddAddress)
-	http.HandleFunc("/getAddress", controller.GetAddress)
-	http.HandleFunc("/deleteAddressByID", controller.DeleteAddressByID)
-}
-
 // User User router
 func User() {
 	http.HandleFunc("/login", controller.Login)
@@ -69,4 +62,11 @@ func Order() {
 	http.HandleFunc("/getOrderByUserID", controller.GetOrderByUserID)
 	http.HandleFunc("/sendOrder", controller.SendOrder)
 	http.HandleFunc("/takeOrder", controller.TakeOrder)
+}
+
+// Setup Setup
+func Setup() {
+	http.HandleFunc("/addAddress", controller.AddAddress)
+	http.HandleFunc("/getAddress", controller.GetAddress)
+	http.HandleFunc("/deleteAddressByID", controller.DeleteAddressByID)
 }
