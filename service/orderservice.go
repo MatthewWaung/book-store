@@ -1,8 +1,6 @@
 package service
 
 import (
-	"fmt"
-
 	"github.com/shuwenhe/shuwen-shop/dao"
 	"github.com/shuwenhe/shuwen-shop/model"
 )
@@ -36,7 +34,6 @@ func GetOrders() ([]*model.Order, error) {
 
 func GetOrderByUserID(userID int) ([]*model.Order, error) {
 	order, err := dao.GetOrderByUserID(userID)
-	fmt.Println("order = ", order)
 	if err != nil {
 		return nil, err
 	}
