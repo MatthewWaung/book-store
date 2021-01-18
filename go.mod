@@ -3,7 +3,7 @@ module github.com/shuwenhe/shuwen-shop
 go 1.15
 
 require (
-	github.com/astaxie/beego v1.12.3 // indirect
+	github.com/astaxie/beego v1.12.3
 	github.com/beego/bee v1.12.3 // indirect
 	github.com/flosch/pongo2 v0.0.0-20200805083417-63c99409991d // indirect
 	github.com/fsnotify/fsnotify v1.4.9

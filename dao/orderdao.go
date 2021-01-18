@@ -8,8 +8,8 @@ import (
 
 // AddOrder add order
 func AddOrder(order *model.Order) error {
-	sql := "insert into orders(id,total_count,total_amount,state,user_id,create_time) values(?,?,?,?,?,?)"
-	_, err := utils.Db.Exec(sql, &order.OrderID, &order.TotalCount, &order.TotalAmount, &order.State, &order.UserID, &order.CreateTime)
+	sql := "insert into orders(id,total_count,total_amount,state,create_time,user_id) values(?,?,?,?,?,?)"
+	_, err := utils.Db.Exec(sql, &order.OrderID, &order.TotalCount, &order.TotalAmount, &order.State, &order.CreateTime, &order.UserID)
 	if err != nil {
 		return err
 	}
@@ -18,7 +18,7 @@ func AddOrder(order *model.Order) error {
 
 // GetOrders Get all orders in the database
 func GetOrders() ([]*model.Order, error) {
-	sql := "select id,create_time,total_count,total_amount,state,user_id from orders" // sql
+	sql := "select id,total_count,total_amount,state,create_time,user_id from orders" // sql
 	rows, err := utils.Db.Query(sql)
 	if err != nil {
 		return nil, err
@@ -33,7 +33,7 @@ func GetOrders() ([]*model.Order, error) {
 }
 
 func GetOrderByUserID(userID int) ([]*model.Order, error) {
-	sql := "select id,create_time,total_count,total_amount,state,user_id from orders where user_id=?"
+	sql := "select id,total_count,total_amount,state,create_time,user_id from orders where user_id=?"
 	rows, err := utils.Db.Query(sql, userID)
 	if err != nil {
 		return nil, err
@@ -41,7 +41,7 @@ func GetOrderByUserID(userID int) ([]*model.Order, error) {
 	var orders []*model.Order
 	for rows.Next() {
 		order := &model.Order{}
-		rows.Scan(&order.OrderID, &order.CreateTime, &order.TotalCount, &order.TotalAmount, &order.State, &order.UserID)
+		rows.Scan(&order.OrderID, &order.TotalCount, &order.TotalAmount, &order.State, &order.CreateTime, &order.UserID)
 		orders = append(orders, order)
 	}
 	return orders, nil

@@ -9,8 +9,8 @@ import (
 
 // AddCartItem Insert item into the cart items table
 func AddCartItem(cartItem *model.CartItem) error {
-	sql := "insert into cart_item(count,amount,book_id,cart_id,createtime) values(?,?,?,?,?)"                         // ID is an auto-increment primary key
-	_, err := utils.Db.Exec(sql, cartItem.Count, cartItem.GetAmount(), cartItem.Item.ID, cartItem.CartID, time.Now()) // Execute
+	sql := "insert into cart_item(count,amount,book_id,createtime,cart_id) values(?,?,?,?,?)"                         // ID is an auto-increment primary key
+	_, err := utils.Db.Exec(sql, cartItem.Count, cartItem.GetAmount(), cartItem.Item.ID, time.Now(), cartItem.CartID) // Execute
 	if err != nil {
 		return err
 	}
