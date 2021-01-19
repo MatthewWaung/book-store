@@ -2,6 +2,7 @@ package dao
 
 import (
 	"net/http"
+	"time"
 
 	utils "github.com/shuwenhe/shuwen-shop/db"
 
@@ -10,8 +11,8 @@ import (
 
 // AddSession 添加session到数据库
 func AddSession(session *model.Session) error {
-	sql := "insert into session values(?,?,?)"                                        // sql
-	_, err := utils.Db.Exec(sql, &session.SessionID, &session.Phone, &session.UserID) // 执行
+	sql := "insert into session values(?,?,?,?)"                                                  // sql
+	_, err := utils.Db.Exec(sql, &session.SessionID, &session.Phone, time.Now(), &session.UserID) // 执行
 	if err != nil {
 		return err
 	}
