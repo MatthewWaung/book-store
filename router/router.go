@@ -3,7 +3,7 @@ package router
 import (
 	"net/http"
 
-	"github.com/shuwenhe/shuwen-shop/controller"
+	controller "github.com/shuwenhe/shuwen-shop/api"
 	"github.com/spf13/viper"
 )
 
